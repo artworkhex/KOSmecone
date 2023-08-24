@@ -548,10 +548,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -592,12 +588,24 @@ video {
   height: 200px;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
 .w-\[170px\] {
   width: 170px;
 }
 
 .w-\[190px\] {
   width: 190px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
