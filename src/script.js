@@ -19,6 +19,7 @@ searchInput.addEventListener("keyup", (event) => {
         if (name.includes(searchQuery)) {
             // found name matching search, display it
             nameElement.style.display = "block";
+            
         } else {
             // no match, don't display name
             nameElement.style.display = "none";
