@@ -32,18 +32,29 @@
 
 
     <header class="w-screen h-screen ">
-        <div class="ml-5 mt-10 lg1:mt-44 lg1:text-3xl lg1:font-bold ">
-            Selamat Datang di
-            <br>
-            <span class="text-4xl lg1:text-8xl lg1:font-extrabold ">
-                E-Commers
-            </span>
-            <br>
-            <span class="font-black text-5xl lg1:text-6xl text-red-500">
-                SMECONE
-            </span>
+        <div class="ml-5 mt-10 lg1:mt-44 lg1:text-3xl lg1:font-bold  ">
+            <div class="wrapper">
+                Selamat Datang di
+                <br>
+                <span class="text-4xl lg1:text-8xl lg1:font-extrabold ">
+                    E-Commers
+                </span>
+                <!-- stuck - desktop -->
+                <span class="text-4xl lg1:text-8xl lg1:font-extrabold hidden lg1:block text-[#FC3535]">
+                    SMECONE
+                </span>
+
+                <!-- animasi - phone -->
+                <svg
+                    class="font-black text-5xl lg1:text-7xl absolute -left-3 top-[15%] lg1:ml-[10%] lg1:top-[45%] lg1:hidden block ">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                        SMECONE
+                    </text>
+                </svg>
+
+            </div>
         </div>
-        <img class="right-0 lg1:top-28 mt-16 lg1:mt-0 absolute lg1:w-[500px] " src="./asset/header.png" alt="">
+        <img class="right-0 lg1:top-28 mt-28 lg1:mt-0 absolute lg1:w-[500px] " src="./asset/header.png" alt="">
     </header>
 
 

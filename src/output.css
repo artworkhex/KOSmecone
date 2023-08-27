@@ -542,12 +542,32 @@ video {
   position: relative;
 }
 
+.-left-3 {
+  left: -0.75rem;
+}
+
 .right-0 {
   right: 0px;
 }
 
 .right-6 {
   right: 1.5rem;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[30\%\] {
+  top: 30%;
+}
+
+.top-\[10\%\] {
+  top: 10%;
+}
+
+.top-\[15\%\] {
+  top: 15%;
 }
 
 .m-0 {
@@ -684,6 +704,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-7 {
@@ -1227,6 +1251,26 @@ body {
     top: 7rem;
   }
 
+  .lg1\:left-3 {
+    left: 0.75rem;
+  }
+
+  .lg1\:top-\[15\%\] {
+    top: 15%;
+  }
+
+  .lg1\:top-\[35\%\] {
+    top: 35%;
+  }
+
+  .lg1\:top-\[55\%\] {
+    top: 55%;
+  }
+
+  .lg1\:top-\[45\%\] {
+    top: 45%;
+  }
+
   .lg1\:mx-7 {
     margin-left: 1.75rem;
     margin-right: 1.75rem;
@@ -1261,8 +1305,36 @@ body {
     margin-top: 11rem;
   }
 
+  .lg1\:ml-\[\] {
+    margin-left: ;
+  }
+
+  .lg1\:ml-\[200px\] {
+    margin-left: 200px;
+  }
+
+  .lg1\:ml-\[0px\] {
+    margin-left: 0px;
+  }
+
+  .lg1\:ml-\[20\%\] {
+    margin-left: 20%;
+  }
+
+  .lg1\:ml-\[10\%\] {
+    margin-left: 10%;
+  }
+
+  .lg1\:block {
+    display: block;
+  }
+
   .lg1\:grid {
     display: grid;
+  }
+
+  .lg1\:hidden {
+    display: none;
   }
 
   .lg1\:h-10 {
@@ -1315,6 +1387,11 @@ body {
 
   .lg1\:text-8xl {
     font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg1\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
