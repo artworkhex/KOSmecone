@@ -3,6 +3,13 @@ module.exports = {
   content: [
     "./*.html",
     './**/*.html',
+    './KOSmecone - about/index.html',
+    './KOSmecone - detail/index.html',
+    './KOSmecone - login/index.html',
+    './KOSmecone - login/KOSmecone - loginn/index.html',
+    './KOSmecone - login/KOSmecone - regist/index.html',
+    './KOSmecone - produk/index',
+
   ],
   theme: {
     screens: {

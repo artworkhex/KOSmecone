@@ -560,10 +560,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-36 {
   margin-top: 9rem;
 }
@@ -580,10 +576,6 @@ video {
   margin-top: 20px;
 }
 
-.mt-0 {
-  margin-top: 0px;
-}
-
 .flex {
   display: flex;
 }
@@ -596,20 +588,12 @@ video {
   height: 20px;
 }
 
-.w-\[20px\] {
-  width: 20px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[100\] {
-  width: 100;
-}
-
 .w-\[100\%\] {
   width: 100%;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .grid-cols-1 {
@@ -632,9 +616,9 @@ video {
   border-radius: 0.5rem;
 }
 
-.bg-\[\#c7c7c7\] {
+.bg-\[\#3A3A3A\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(199 199 199 / var(--tw-bg-opacity));
+  background-color: rgb(58 58 58 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -650,25 +634,6 @@ video {
 .bg-zinc-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#BFBFBF\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 191 191 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#D9D9D9\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#3A3A3A\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(58 58 58 / var(--tw-bg-opacity));
 }
 
 .px-10 {
@@ -694,21 +659,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
-}
-
-.px-\[4\%\] {
-  padding-left: 4%;
-  padding-right: 4%;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pt-24 {
@@ -741,11 +691,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-black {
@@ -796,9 +741,29 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-  .lg\:flex {
-    display: flex;
+@media (min-width: 620px) {
+  .md1\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md1\:grid {
+    display: grid;
+  }
+
+  .md1\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md1\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 776px) {
+  .lg1\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 
