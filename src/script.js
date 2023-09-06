@@ -23,6 +23,8 @@ searchInput.addEventListener("keyup", (event) => {
             // found name matching search, display it
             nameElement.removeAttribute = "block";
 
+        } else if (name.includes()) {
+            nameElement.removeAttribute = "block";
         } else {
             // no match, don't display name
             nameElement.style.display = "none";

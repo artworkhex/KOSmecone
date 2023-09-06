@@ -1,3 +1,24 @@
 .produk1 {
     background-image: url(../asset/produk/produk1.jpg);
 }
+
+.lapis {
+    background-image: url(../asset/produk/lapis.webp);
+}
+
+.keripikS {
+    background-image: url(../asset/produk/keripik.webp);
+}
+
+
+.mochi {
+    background-image: url(../asset/produk/mochi.jpg);
+}
+
+.milidi {
+    background-image: url(../asset/produk/milidi.jpg);
+}
+
+.risol {
+    background-image: url(../asset/produk/risol.jpg);
+}
