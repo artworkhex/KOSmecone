@@ -2,23 +2,27 @@
     background-image: url(../asset/produk/produk1.jpg);
 }
 
-.lapis {
-    background-image: url(../asset/produk/lapis.webp);
+.Lapis {
+    background-image: url(/asset/produk/lapis.webp);
 }
 
-.keripikS {
+.KeripikS {
     background-image: url(../asset/produk/keripik.webp);
 }
 
-
-.mochi {
-    background-image: url(../asset/produk/mochi.jpg);
+.Makaroni {
+    background-image: url(../asset/produk/makaroni.webp);
 }
 
-.milidi {
+
+.Mochi {
+    background-image: url(/asset/produk/mochi.jpg);
+}
+
+.Milidi {
     background-image: url(../asset/produk/milidi.jpg);
 }
 
-.risol {
+.Risol {
     background-image: url(../asset/produk/risol.jpg);
 }
