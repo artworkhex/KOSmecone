@@ -31,3 +31,4 @@ searchInput.addEventListener("keyup", (event) => {
         }
     }
 });
+

@@ -1331,6 +1331,16 @@ body {
   background-color: rgb(136 136 136 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#919191\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(145 145 145 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#a52727\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 39 39 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-\[\#a5a5a5\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(165 165 165 / var(--tw-bg-opacity));
@@ -1529,6 +1539,14 @@ body {
 }
 
 @media (min-width: 776px) {
+  .lg1\:absolute {
+    position: absolute;
+  }
+
+  .lg1\:bottom-0 {
+    bottom: 0px;
+  }
+
   .lg1\:top-0 {
     top: 0px;
   }
@@ -1567,6 +1585,10 @@ body {
     margin-top: 11rem;
   }
 
+  .lg1\:flex {
+    display: flex;
+  }
+
   .lg1\:grid {
     display: grid;
   }
@@ -1587,8 +1609,16 @@ body {
     height: 60px;
   }
 
+  .lg1\:h-\[700px\] {
+    height: 700px;
+  }
+
   .lg1\:w-10 {
     width: 2.5rem;
+  }
+
+  .lg1\:w-\[1000px\] {
+    width: 1000px;
   }
 
   .lg1\:w-\[1300px\] {
@@ -1605,6 +1635,10 @@ body {
 
   .lg1\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg1\:items-center {
+    align-items: center;
   }
 
   .lg1\:rounded-lg {
@@ -1629,6 +1663,14 @@ body {
   .lg1\:px-60 {
     padding-left: 15rem;
     padding-right: 15rem;
+  }
+
+  .lg1\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .lg1\:pr-10 {
+    padding-right: 2.5rem;
   }
 
   .lg1\:text-left {
@@ -1667,5 +1709,11 @@ body {
 
   .lg1\:font-extrabold {
     font-weight: 800;
+  }
+}
+
+@media (min-width: 1240px) {
+  .xl1\:w-\[1650px\] {
+    width: 1650px;
   }
 }
