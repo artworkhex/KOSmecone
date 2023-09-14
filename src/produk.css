@@ -2,27 +2,59 @@
     background-image: url(../asset/produk/produk1.jpg);
 }
 
-.Lapis {
+.lapis {
     background-image: url(/asset/produk/lapis.webp);
 }
 
-.KeripikS {
+.keripikS {
     background-image: url(../asset/produk/keripik.webp);
 }
 
-.Makaroni {
+.makaroni {
     background-image: url(../asset/produk/makaroni.webp);
 }
 
 
-.Mochi {
+.mochi {
     background-image: url(/asset/produk/mochi.jpg);
 }
 
-.Milidi {
+.milidi {
     background-image: url(../asset/produk/milidi.jpg);
 }
 
-.Risol {
+.risol {
     background-image: url(../asset/produk/risol.jpg);
+}
+
+.kebab {
+    background-image: url(../asset/produk/kebab.jpg);
+}
+
+.papeda {
+    background-image: url(../asset/produk/papeda.webp);
+}
+
+.basreng {
+    background-image: url(../asset/produk/basreng.webp);
+}
+
+.sosis {
+    background-image: url(../asset/produk/sosis.webp);
+}
+
+.cireng {
+    background-image: url(../asset/produk/cireng.jpg);
+}
+
+.salad-buah {
+    background-image: url(../asset/produk/salad-buah.webp);
+}
+
+.dinsum {
+    background-image: url(../asset/produk/dinsum.jpg);
+}
+
+.burger {
+    background-image: url(../asset/produk/burger.jpg);
 }

@@ -550,8 +550,8 @@ video {
   bottom: 0px;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
+.bottom-3 {
+  bottom: 0.75rem;
 }
 
 .right-0 {
@@ -591,6 +591,11 @@ video {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .my-6 {
@@ -657,6 +662,10 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mt-28 {
@@ -919,9 +928,9 @@ video {
   background-color: rgb(252 53 53 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#a5a5a5\] {
+.bg-\[\#dbdbdb\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(165 165 165 / var(--tw-bg-opacity));
+  background-color: rgb(219 219 219 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#eeeeee\] {
@@ -1001,11 +1010,6 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1074,6 +1078,11 @@ video {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .pb-1 {
@@ -1273,7 +1282,9 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body {
+* {
+  margin: 0px;
+  padding: 0px;
   scroll-behavior: smooth;
 }
 
@@ -1289,6 +1300,12 @@ body {
   100% {
     transform: translateY(-100px);
   }
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-110:hover {
@@ -1344,6 +1361,11 @@ body {
 .hover\:bg-\[\#a5a5a5\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(165 165 165 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#e5e5e5\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-transparent:hover {
@@ -1643,6 +1665,11 @@ body {
 
   .lg1\:rounded-lg {
     border-radius: 0.5rem;
+  }
+
+  .lg1\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .lg1\:px-24 {

@@ -13,7 +13,7 @@
 </head>
 
 <!-- navbar -->
-<nav
+<nav id="back"
     class="flex justify-center bg-[#575757] text-white shadow-xl absolute w-[100%] mt-10  py-3 items-center lg1:text-xl z-50  ">
     <a href="#">
         <div class="mx-[20px] hover:font-bold hover:text-neutral-200 duration-300 hover:scale-110 "><span
@@ -24,7 +24,7 @@
     <a href="KOSmecone-produk/index.html">
         <div class="mx-[20px] hover:font-bold hover:text-neutral-200 duration-300 hover:scale-110 ">Kantin</div>
     </a>
-    <a href="KOSmecone-about/index.html">
+    <a href="KOSmecone-about/about.html">
         <div class="mx-[20px] hover:font-bold hover:text-neutral-200 duration-300 hover:scale-110 ">About</div>
     </a>
     <a href="KOSmecone-form/index.html">
@@ -37,9 +37,7 @@
 <body class="overflow-x-hidden ">
     <header class="w-screen h-screen  text-white bg-[#292929] pt-[20px]">
 
-
-
-        <div class="ml-10 mt-10 lg1:mt-44 lg1:text-5xl font-bold z-50 ">
+        <div class="ml-10 mt-24 lg1:mt-44 lg1:text-5xl font-bold z-50 ">
             <div class="wrapper">
                 SELAMAT DATANG DI
                 <br>
@@ -55,12 +53,14 @@
                     class="bg-[#2143eb98] w-[100%] h-[300px] md1:w-[1000px] md1:h-[100%]  bg-center bg-cover bg-no-repeat lg1:w-[1300px] lg1:h-[100%] absolute bottom-0 right-0 lg1:top-0 z-10">
                 </div>
             </div>
-
         </div>
-
-
-        </div>
-        </div>
+        <!-- panah atas -->
+        <a href="#back">
+            <div
+                class="hover:bg-[#a5a5a5] bg-[#dbdbdb] shadow-lg w-[60px] h-[60px] hover:scale-110 duration-200  rounded-full  right-5 bottom-3 fixed z-50">
+                <img class="p-5" src="/asset/arround.png" alt="">
+            </div>
+        </a>
     </header>
 
 
@@ -71,7 +71,7 @@
     <!-- konten1 -->
     <div class="bg-[#D9D9D9] ">
         <!-- search bar -->
-        <div class="px-7 pt-10 hover:scale-[101%] duration-300">
+        <div class=" pt-10 px-5 lg1:px-14 hover:scale-[101%] duration-300">
             <div class="relative mb-4 flex flex-wrap items-stretch shadow-xl">
                 <input id="searchInput" type="text"
                     class="relative m-0 block w-[100%] h-[45px] lg1:h-[60px] rounded-lg px-3 py-2 lg1:px-6  bg-[#505050]  text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
@@ -99,54 +99,67 @@
         <!--  -->
 
 
+
+
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
         <!-- card 1 gabung card 2 untuk web laptop -->
         <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 ">
 
             <!-- card1 -->
             <div
-                class="  grid grid-cols-2 px-6  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-10 name">
-                <!-- <a href="./KOSmecone-detail/detail.html"> -->
-                <div class="mr-2  ">
-                    <div class="mt-3">Rp.3000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Milidi pedas</div>
-                    <div class="mt-1 text-zinc-600">Rizki - XI PPLG 1</div>
-                    <button href="wa.me/+6285607864511?text=mau%20pesan%203%20dong%20kk"
-                        class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Pesan</button>
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mr-2">
+                    <div class="mt-3">Rp.1000,-</div>
+                    <div class="mt-1 text-2xl font-bold ">Cireng 7 Rasa</div>
+                    <div class="mt-1 text-zinc-600">Dadang - XI PPLG 1</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                        <button
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
                     <br>
-                    <button
-                        class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Pre-Order</button>
+                    <a href="../KOSmecone-detail/cireng.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
                 </div>
                 <div>
-                    <div class="bg-[#BFBFBF] w-[100%] h-[200px]  Milidi bg-cover bg-center  bg-no-repeat rounded-md">
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] cireng bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
-                <!-- </a> -->
             </div>
 
 
 
             <!-- card2 -->
             <div
-                class="grid grid-cols-2 px-6  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-10 name">
-                <!-- <a href="./KOSmecone-detail/detail.html"> -->
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3">Rp.3000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Mochi 6 rasa </div>
-                    <div class="mt-1 text-zinc-600">Najwa - XI PPLG 2</div>
-                    <button href="wa.me/+6285607864511?text=mau%20pesan%203%20dong%20kk"
-                        class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Pesan</button>
+                    <div class="mt-3">Rp.5000,-</div>
+                    <div class="mt-1 text-2xl font-bold ">Salad Buah</div>
+                    <div class="mt-1 text-zinc-600">Dede Saputra - XI PPLG 1</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                        <button
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
                     <br>
-                    <button
-                        class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Pre-Order</button>
+                    <a href="../KOSmecone-detail/salad-buah.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
                 </div>
                 <div>
-                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] Mochi  bg-cover bg-center  bg-no-repeat rounded-md">
+                    <div
+                        class="bg-[#BFBFBF] w-[100%] h-[200px] salad-buah  bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
-                <!-- </a> -->
             </div>
-            </a>
         </div>
+        <!--  -->
+
         <!--  -->
         <a class="mt-10 right-10 lg1:text-2xl absolute font-semibold name " href="KOSmecone-produk/index.html">
             See
@@ -161,96 +174,235 @@
         </div>
         <!--  -->
 
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
         <!-- card 1 gabung card 2 untuk web laptop -->
         <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 ">
-            <a href="./KOSmecone-detail/detail.html">
-                <!-- card1 -->
-                <div
-                    class="grid grid-cols-2 px-6   lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-10 name">
-                    <div class="mr-2">
-                        <div class="mt-3">Rp.3500,-</div>
-                        <div class="mt-1 text-2xl font-bold ">Makaroni 4 rasa</div>
-                        <div class="mt-1 text-zinc-600">Dita - XI PPLG 2</div>
-                        <button href="wa.me/+6285607864511?text=mau%20pesan%203%20dong%20kk"
-                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Pesan</button>
-                        <br>
-                        <button
-                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Pre-Order</button>
-                    </div>
-                    <div>
-                        <div
-                            class="bg-[#BFBFBF] w-[100%] h-[200px] Makaroni  bg-cover bg-center  bg-no-repeat rounded-md">
-                        </div>
-                    </div>
-                </div>
-            </a>
 
-            <a href="./KOSmecone-detail/detail.html">
-                <!-- card2 -->
-                <div
-                    class="grid grid-cols-2 px-6  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-10 name">
-                    <div class="mr-2">
-                        <div class="mt-3">Rp.4000,-</div>
-                        <div class="mt-1 text-2xl font-bold ">Keripik Singkong</div>
-                        <div class="mt-1 text-zinc-600">Kafka S. - XI PPLG 2</div>
-                        <button href="wa.me/+6285607864511?text=mau%20pesan%203%20dong%20kk"
-                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Pesan</button>
-                        <br>
+            <!-- card1 -->
+            <div
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mr-2">
+                    <div class="mt-3">Rp.3500,-</div>
+                    <div class="mt-1 text-2xl font-bold ">kebab</div>
+                    <div class="mt-1 text-zinc-600">Rahmawati - XII PPLG 2</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
-                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Pre-Order</button>
-                    </div>
-                    <div>
-                        <div
-                            class="bg-[#BFBFBF] w-[100%] h-[200px] KeripikS  bg-cover bg-center  bg-no-repeat rounded-md">
-                        </div>
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
+                    <br>
+                    <a href="../KOSmecone-detail/kebab.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
+                </div>
+                <div>
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] kebab  bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
-            </a>
+            </div>
+
+
+
+            <!-- card2 -->
+            <div
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mr-2">
+                    <div class="mt-3">Rp.1000,-</div>
+                    <div class="mt-1 text-2xl font-bold ">Papeda Telur Ayam</div>
+                    <div class="mt-1 text-zinc-600">Siti Saputri - XI PPLG 1</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                        <button
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
+                    <br>
+                    <a href="../KOSmecone-detail/papeda.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
+                </div>
+                <div>
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] papeda  bg-cover bg-center  bg-no-repeat rounded-md">
+                    </div>
+                </div>
+            </div>
         </div>
 
+
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
         <!-- card 1 gabung card 2 untuk web laptop -->
         <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 ">
-            <a href="./KOSmecone-detail/detail.html">
-                <!-- card1 -->
-                <div
-                    class="grid grid-cols-2 px-6  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-10 name">
-                    <div class="mr-2">
-                        <div class="mt-3">Rp.2000,-</div>
-                        <div class="mt-1 text-2xl font-bold ">Risol Mayo</div>
-                        <div class="mt-1 text-zinc-600">Dwi Farel - XI PPLG 2</div>
-                        <button href="wa.me/+6285607864511?text=mau%20pesan%203%20dong%20kk"
-                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Pesan</button>
-                        <br>
-                        <button
-                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Pre-Order</button>
-                    </div>
-                    <div>
-                        <div class="bg-[#BFBFBF] w-[100%] h-[200px] Risol  bg-cover bg-center  bg-no-repeat rounded-md">
-                        </div>
-                    </div>
-                </div>
-            </a>
 
-            <a href="./KOSmecone-detail/detail.html">
-                <!-- card2 -->
-                <div
-                    class="grid grid-cols-2 px-6  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-10 name">
-                    <div class="mr-2">
-                        <div class="mt-3">Rp.1500,-</div>
-                        <div class="mt-1 text-2xl font-bold ">Kue Lapis</div>
-                        <div class="mt-1 text-zinc-600">Gopal S. - XI PPLG 1</div>
-                        <button href="wa.me/+6285607864511?text=mau%20pesan%203%20dong%20kk"
-                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Pesan</button>
-                        <br>
+            <!-- card1 -->
+            <div
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mr-2">
+                    <div class="mt-3">Rp.2000,-</div>
+                    <div class="mt-1 text-2xl font-bold ">Basreng 2 Rasa</div>
+                    <div class="mt-1 text-zinc-600">Dadang - XII PPLG 2</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
-                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Pre-Order</button>
-                    </div>
-                    <div>
-                        <div class="bg-[#BFBFBF] w-[100%] h-[200px] Lapis  bg-cover bg-center  bg-no-repeat rounded-md">
-                        </div>
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
+                    <br>
+                    <a href="../KOSmecone-detail/basreng.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
+                </div>
+                <div>
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] basreng bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
-            </a>
+            </div>
+
+
+
+            <!-- card2 -->
+            <div
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mr-2">
+                    <div class="mt-3">Rp.1000,-</div>
+                    <div class="mt-1 text-2xl font-bold ">Sosis Goreng</div>
+                    <div class="mt-1 text-zinc-600">Dede Saputra - XI PPLG 1</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                        <button
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
+                    <br>
+                    <a href="../KOSmecone-detail/sosis.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
+                </div>
+                <div>
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] sosis  bg-cover bg-center  bg-no-repeat rounded-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
+        <!-- card 1 gabung card 2 untuk web laptop -->
+        <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 ">
+
+            <!-- card1 -->
+            <div
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mr-2">
+                    <div class="mt-3">Rp.3500,-</div>
+                    <div class="mt-1 text-2xl font-bold ">kebab</div>
+                    <div class="mt-1 text-zinc-600">Rahmawati - XII PPLG 2</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                        <button
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
+                    <br>
+                    <a href="../KOSmecone-detail/kebab.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
+                </div>
+                <div>
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] kebab  bg-cover bg-center  bg-no-repeat rounded-md">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- card2 -->
+            <div
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mr-2">
+                    <div class="mt-3">Rp.1000,-</div>
+                    <div class="mt-1 text-2xl font-bold ">Papeda Telur Ayam</div>
+                    <div class="mt-1 text-zinc-600">Siti Saputri - XI PPLG 1</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                        <button
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
+                    <br>
+                    <a href="../KOSmecone-detail/papeda.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
+                </div>
+                <div>
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] papeda  bg-cover bg-center  bg-no-repeat rounded-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
+        <!-- --------------------------------------------------- -->
+        <!-- card 1 gabung card 2 untuk web laptop -->
+        <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 ">
+
+            <!-- card1 -->
+            <div
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mr-2">
+                    <div class="mt-3">Rp.2000,-</div>
+                    <div class="mt-1 text-2xl font-bold ">Basreng 2 Rasa</div>
+                    <div class="mt-1 text-zinc-600">Dadang - XII PPLG 2</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                        <button
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
+                    <br>
+                    <a href="../KOSmecone-detail/basreng.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
+                </div>
+                <div>
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] basreng bg-cover bg-center  bg-no-repeat rounded-md">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- card2 -->
+            <div
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mr-2">
+                    <div class="mt-3">Rp.1000,-</div>
+                    <div class="mt-1 text-2xl font-bold ">Sosis Goreng</div>
+                    <div class="mt-1 text-zinc-600">Dede Saputra - XI PPLG 1</div>
+                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                        <button
+                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
+                    </a>
+                    <br>
+                    <a href="../KOSmecone-detail/sosis.html">
+                        <button
+                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
+                            Produk</button>
+                    </a>
+                </div>
+                <div>
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] sosis  bg-cover bg-center  bg-no-repeat rounded-md">
+                    </div>
+                </div>
+            </div>
         </div>
         <!--  -->
         <a class="mt-10 right-10 lg1:text-2xl absolute font-semibold name " href="KOSmecone-produk/index.html">
