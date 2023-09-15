@@ -1035,11 +1035,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1288,6 +1283,10 @@ video {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: itim;
+}
+
 .animamsi1 {
   animation: myAnim 1s ease 0s 1 normal forwards;
 }
@@ -1300,6 +1299,38 @@ video {
   100% {
     transform: translateY(-100px);
   }
+}
+
+@font-face
+/*perintah untuk memanggil font eksternal*/
+    {
+  font-family: 'itim';
+
+  /*memberikan nama bebas untuk font*/
+
+  src: url('font/Itim/Itim-Regular.ttf');
+
+  /*memanggil file font eksternalnya di folder nexa*/
+}
+
+@font-face
+/*perintah untuk memanggil font eksternal*/
+    {
+  font-family: 'open-Sans';
+
+  /*memberikan nama bebas untuk font*/
+
+  src: url('/font/Open_Sans/static/OpenSans-Bold.ttf');
+
+  src: url('/font/Open_Sans/static/OpenSans-ExtraBold.ttf');
+
+  src: url('/font/Open_Sans/static/OpenSans-Light.ttf');
+
+  src: url('/font/Open_Sans/static/OpenSans-Medium.ttf');
+
+  src: url('/font/Open_Sans/static/OpenSans-Regular.ttf');
+
+  /*memanggil file font eksternalnya di folder nexa*/
 }
 
 .hover\:scale-105:hover {
