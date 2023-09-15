@@ -5,6 +5,7 @@ module.exports = {
     './**/*.html',
     './KOSmecone - about/index.html',
     './KOSmecone - detail/detail.html',
+    './KOSmecone - detail/*.html',
     './KOSmecone - login/index.html',
     './KOSmecone - login/KOSmecone - loginn/index.html',
     './KOSmecone - login/KOSmecone - regist/index.html',
