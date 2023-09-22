@@ -546,10 +546,6 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .bottom-3 {
   bottom: 0.75rem;
 }
@@ -566,12 +562,12 @@ video {
   right: 1.25rem;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.z-\[99\] {
+  z-index: 99;
 }
 
 .m-0 {
@@ -586,6 +582,11 @@ video {
 .mx-\[20px\] {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.mx-\[30px\] {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .my-10 {
@@ -664,10 +665,6 @@ video {
   margin-top: 5rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
 .mt-28 {
   margin-top: 7rem;
 }
@@ -742,10 +739,6 @@ video {
 
 .h-\[2px\] {
   height: 2px;
-}
-
-.h-\[300px\] {
-  height: 300px;
 }
 
 .h-\[400px\] {
@@ -884,10 +877,6 @@ video {
   border-color: transparent;
 }
 
-.bg-\[\#2143eb98\] {
-  background-color: #2143eb98;
-}
-
 .bg-\[\#292929\] {
   --tw-bg-opacity: 1;
   background-color: rgb(41 41 41 / var(--tw-bg-opacity));
@@ -896,11 +885,6 @@ video {
 .bg-\[\#3A3A3A\] {
   --tw-bg-opacity: 1;
   background-color: rgb(58 58 58 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#505050\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(80 80 80 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#575757\] {
@@ -973,6 +957,10 @@ video {
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/asset\/smecone\.jpg\'\)\] {
+  background-image: url('../asset/smecone.jpg');
+}
+
 .bg-\[url\(\'\/asset\/header1\.png\'\)\] {
   background-image: url('/asset/header1.png');
 }
@@ -991,6 +979,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-right {
+  background-position: right;
 }
 
 .bg-no-repeat {
@@ -1284,7 +1276,7 @@ video {
 }
 
 body {
-  font-family: itim;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .animamsi1 {
@@ -1301,9 +1293,7 @@ body {
   }
 }
 
-@font-face
-/*perintah untuk memanggil font eksternal*/
-    {
+@font-face {
   font-family: 'itim';
 
   /*memberikan nama bebas untuk font*/
@@ -1313,20 +1303,15 @@ body {
   /*memanggil file font eksternalnya di folder nexa*/
 }
 
-@font-face
-/*perintah untuk memanggil font eksternal*/
-    {
+@font-face {
   font-family: 'open-Sans';
 
   /*memberikan nama bebas untuk font*/
 
-  src: url('/font/Open_Sans/static/OpenSans-Bold.ttf');
-
-  src: url('/font/Open_Sans/static/OpenSans-ExtraBold.ttf');
-
-  src: url('/font/Open_Sans/static/OpenSans-Light.ttf');
-
-  src: url('/font/Open_Sans/static/OpenSans-Medium.ttf');
+  /* src: url('/font/Open_Sans/static/OpenSans-Bold.ttf');
+    src: url('/font/Open_Sans/static/OpenSans-ExtraBold.ttf');
+    src: url('/font/Open_Sans/static/OpenSans-Light.ttf');
+    src: url('/font/Open_Sans/static/OpenSans-Medium.ttf'); */
 
   src: url('/font/Open_Sans/static/OpenSans-Regular.ttf');
 
@@ -1408,8 +1393,13 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:font-bold:hover {
-  font-weight: 700;
+.hover\:font-medium:hover {
+  font-weight: 500;
+}
+
+.hover\:text-\[\#FC3535\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(252 53 53 / var(--tw-text-opacity));
 }
 
 .hover\:text-black:hover {
@@ -1507,16 +1497,8 @@ body {
     display: grid;
   }
 
-  .md1\:h-\[100\%\] {
-    height: 100%;
-  }
-
   .md1\:h-\[550px\] {
     height: 550px;
-  }
-
-  .md1\:w-\[1000px\] {
-    width: 1000px;
   }
 
   .md1\:w-\[500px\] {
@@ -1600,10 +1582,6 @@ body {
     bottom: 0px;
   }
 
-  .lg1\:top-0 {
-    top: 0px;
-  }
-
   .lg1\:mx-14 {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
@@ -1612,6 +1590,10 @@ body {
   .lg1\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+  }
+
+  .lg1\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .lg1\:ml-2 {
@@ -1634,8 +1616,12 @@ body {
     margin-right: 1rem;
   }
 
-  .lg1\:mt-44 {
-    margin-top: 11rem;
+  .lg1\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .lg1\:mt-56 {
+    margin-top: 14rem;
   }
 
   .lg1\:flex {
@@ -1648,10 +1634,6 @@ body {
 
   .lg1\:h-10 {
     height: 2.5rem;
-  }
-
-  .lg1\:h-\[100\%\] {
-    height: 100%;
   }
 
   .lg1\:h-\[400px\] {
@@ -1674,10 +1656,6 @@ body {
     width: 1000px;
   }
 
-  .lg1\:w-\[1300px\] {
-    width: 1300px;
-  }
-
   .lg1\:w-\[500px\] {
     width: 500px;
   }
@@ -1696,6 +1674,10 @@ body {
 
   .lg1\:rounded-lg {
     border-radius: 0.5rem;
+  }
+
+  .lg1\:bg-\[500px\] {
+    background-position: 500px;
   }
 
   .lg1\:px-14 {

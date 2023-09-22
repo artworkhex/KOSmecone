@@ -1,15 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./*.html",
+    '*.html',
     './**/*.html',
-    './KOSmecone - about/index.html',
+    'index.html',
+    'kantin.html',
+    'about.html',
     './KOSmecone - detail/detail.html',
     './KOSmecone - detail/*.html',
     './KOSmecone - login/index.html',
     './KOSmecone - login/KOSmecone - loginn/index.html',
     './KOSmecone - login/KOSmecone - regist/index.html',
-    './KOSmecone - produk/index',
 
   ],
   theme: {
