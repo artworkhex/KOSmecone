@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -10,26 +12,47 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
+    font-family: 'Balsamiq Sans', cursive;
+    /* font-family: 'Fredoka', sans-serif; */
+    /* font-weight: 500; */
+}
+
+.balsamiq {
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 500;
+}
+
+.fredoka {
+    font-family: 'Fredoka', sans-serif;
 }
 
 
 
-@font-face {
-    font-family: 'itim';
-    /*memberikan nama bebas untuk font*/
-    src: url('font/Itim/Itim-Regular.ttf');
-    /*memanggil file font eksternalnya di folder nexa*/
+
+/* bg glass navbar */
+.bg-nav {
+    background: rgba(12, 12, 12, 0.46);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(12, 12, 12, 0.25);
 }
 
-@font-face {
-    font-family: 'open-Sans';
-    /*memberikan nama bebas untuk font*/
-    /* src: url('/font/Open_Sans/static/OpenSans-Bold.ttf');
-    src: url('/font/Open_Sans/static/OpenSans-ExtraBold.ttf');
-    src: url('/font/Open_Sans/static/OpenSans-Light.ttf');
-    src: url('/font/Open_Sans/static/OpenSans-Medium.ttf'); */
-    src: url('/font/Open_Sans/static/OpenSans-Regular.ttf');
-    /*memanggil file font eksternalnya di folder nexa*/
+
+
+/* scroll bar style custom */
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #FC3535;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FC3535;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(227, 182, 178);
 }
