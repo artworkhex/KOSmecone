@@ -7,28 +7,59 @@
     <link rel="stylesheet" href="../src/produk.css">
     <link rel="stylesheet" href="../src/style.css">
     <link rel="stylesheet" href="../src/output.css">
+    <!-- font navbar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <!-- icon title -->
     <link rel="icon" href="../asset/logo/logo1.png" media="(prefers-color-scheme: light)">
     <link rel="icon" href="../asset/logo/logo1.png" media="(prefers-color-scheme: dark)">
+    <!-- icon items -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Kantin Online</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="flex justify-center mt-[20px] bg-zinc-800 text-white  py-3 items-center lg1:text-xl  ">
-        <a href="../index.html">
-            <div class="mx-[20px] duration-300 hover:text-neutral-200 hover:scale-110 "><span class="text-red-500">
-                    KOS</span>mecone
-            </div>
-        </a>
-        <a href="../kantin.html">
-            <div class="mx-[20px] duration-300 hover:text-neutral-200 hover:scale-110 ">Kantin</div>
-        </a>
-        <a href="../about.html">
-            <div class="mx-[20px] duration-300 hover:text-neutral-200 hover:scale-110 ">About</div>
-        </a>
-        <a href="../KOSmecone-form/index.html">
-            <img class="w-[27px] h-[27px] mx-[20px] duration-300 hover:scale-110 " src="../asset/profil.png" alt="">
-        </a>
+    <nav id="back" class="px-3 md1:px-5 py-2 md1:py-3 shadow-lg bg-zinc-50  md:flex md:items-center md:justify-between ">
+        <div class="flex justify-between items-center z-[100]">
+            <!-- logo -->
+            <span class="text-2xl cursor-pointer">
+                <div class=" mx-[30px] duration-300 hover:text-[#FC3535] hover:scale-110 "><span class="font-bold">
+                        KOS</span>MECONE
+                </div>
+            </span>
+            <!-- burger icon -->
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+    
+        <ul
+            class="md:flex md:items-center z-[99]  md:z-auto md:static absolute bg-zinc-50 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="../index.html" class="text-xl hover:text-[#FC3535] hover:scale-110  duration-500">HOME</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="../kantin.html" class="text-xl hover:text-[#FC3535] hover:scale-110  duration-500">KANTIN</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="../about.html" class="text-xl hover:text-[#FC3535] hover:scale-110  duration-500">ABOUT</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a class="flex items-center" href="../KOSmecone-user/user.html">
+                    <ion-icon class="w-[35px] h-[35px]" name="person-circle-outline"></ion-icon>
+                    <!-- <img class="w-[27px] block lg1:hidden h-[27px] mx-[30px]  duration-300 hover:scale-110 "
+                    src="./asset/profil.png" alt=""> -->
+                    <div class=" lg1:hidden ml-5 text-xl duration-500 hover:text-[#FC3535] hover:scale-110 ">
+                        DAFTAR/LOGIN
+                    </div>
+                </a>
+            </li>
+    
+        </ul>
     </nav>
     <!--  -->
 

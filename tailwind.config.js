@@ -3,14 +3,15 @@ module.exports = {
   content: [
     '*.html',
     './**/*.html',
-    'index.html',
-    'kantin.html',
-    'about.html',
-    './KOSmecone - detail/detail.html',
-    './KOSmecone - detail/*.html',
-    './KOSmecone - login/index.html',
-    './KOSmecone - login/KOSmecone - loginn/index.html',
-    './KOSmecone - login/KOSmecone - regist/index.html',
+    './index.html',
+    './kantin.html',
+    './about.html',
+    './KOSmecone-detail/*.html',
+    './KOSmecone-detail/*.html',
+    './KOSmecone-user/user.html',
+    // 'KOSmecone-user/masuk.html',
+    // 'KOSmecone-user/daftar.html',
+    './KOSmecone-user/*.html',
 
   ],
   theme: {
