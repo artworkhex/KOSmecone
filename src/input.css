@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 
-
-
 * {
     margin: 0px;
     padding: 0px;
@@ -13,9 +11,12 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Balsamiq Sans', cursive;
-    /* font-family: 'Fredoka', sans-serif; */
-    /* font-weight: 500; */
+
+}
+
+@font-face {
+    font-family: 'balsamiq';
+    src: url(../font/BalsamiqSans-Regular.ttf);
 }
 
 .balsamiq {
@@ -26,8 +27,6 @@ body {
 .fredoka {
     font-family: 'Fredoka', sans-serif;
 }
-
-
 
 
 /* bg glass navbar */
@@ -50,9 +49,9 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: #FC3535;
-    border-radius: 15px;
+    border-radius: 2px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(227, 182, 178);
+    background-color: rgb(249, 242, 241);
 }

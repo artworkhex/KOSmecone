@@ -19,54 +19,68 @@
     <!-- icon title -->
     <link rel="icon" href="asset/logo/logo1.png" media="(prefers-color-scheme: light)">
     <link rel="icon" href="asset/logo/logo1.png" media="(prefers-color-scheme: dark)">
+    <!-- icon items -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- animation scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Kosmecone</title>
     <style>
 
     </style>
 </head>
-
-<!-- navbar -->
-<nav id="back"
-    class="slideInDown flex justify-center balsamiq bg-nav  text-white shadow-xl absolute w-[100%] mt-10  py-3 items-center lg1:text-xl z-[99]  ">
-    <a href="#">
-        <div class="mx-[30px] duration-300 hover:text-[#FC3535] hover:scale-110 "><span class="font-bold">
-                KOS</span>MECONE
-        </div>
-    </a>
-
-    <a href="kantin.html">
-        <div class="mx-[30px] duration-300 hover:text-[#FC3535] hover:scale-110 ">KANTIN</div>
-    </a>
-    <a href="about.html">
-        <div
-            class="mx-[30px] duration-300 hover:text-[#FC3535] hover:scale-110 hidden md1:block md1:border-l-violet-50">
-            ABOUT
-        </div>
-    </a>
-    <a href="KOSmecone-user/user.html">
-        <img class="w-[27px] block lg1:hidden h-[27px] mx-[30px]  duration-300 hover:scale-110 "
-            src="./asset/profil.png" alt="">
-        <div class="mx-[30px] hidden lg1:block duration-300 hover:text-[#FC3535] hover:scale-110 ">SELLER</div>
-    </a>
-
-    <div>
-
+<nav id="back" class="px-3 md1:px-5 py-2 md1:py-3 shadow-lg bg-zinc-50  md:flex md:items-center md:justify-between ">
+    <div class="flex justify-between items-center z-[100]">
+        <!-- logo -->
+        <span class="text-2xl cursor-pointer">
+            <div class=" mx-[30px] duration-300 hover:text-[#FC3535] hover:scale-110 "><span class="font-bold">
+                    KOS</span>MECONE
+            </div>
+        </span>
+        <!-- burger icon -->
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
     </div>
+
+    <ul
+        class="md:flex md:items-center z-[99]  md:z-auto md:static absolute bg-zinc-50 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+            <a href="index.html" class="text-xl hover:text-[#FC3535] hover:scale-110  duration-500">HOME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="kantin.html" class="text-xl hover:text-[#FC3535] hover:scale-110  duration-500">KANTIN</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="about.html" class="text-xl hover:text-[#FC3535] hover:scale-110  duration-500">ABOUT</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a class="flex items-center" href="KOSmecone-user/user.html">
+                <ion-icon class="w-[35px] h-[35px]" name="person-circle-outline"></ion-icon>
+                <!-- <img class="w-[27px] block lg1:hidden h-[27px] mx-[30px]  duration-300 hover:scale-110 "
+                src="./asset/profil.png" alt=""> -->
+                <div class=" lg1:hidden ml-5 text-xl duration-500 hover:text-[#FC3535] hover:scale-110 ">
+                    DAFTAR/LOGIN
+                </div>
+            </a>
+        </li>
+
+    </ul>
 </nav>
-<!--  -->
+
 
 <body class="overflow-x-hidden ">
     <header
-        class="w-screen h-screen  text-white bg-[#292929] pt-[20px]  md1:bg-[url('../asset/header2.png')] bg-[url('../asset/header3.png')]  bg-bottom bg-cover  bg-no-repeat">
-
+        class="w-screen h-screen  text-white bg-[#292929] pt-[20px]  sm1:bg-[url('../asset/header-mobile.png')]  lg1:bg-[url('../asset/header-desktop2.png')]  bg-bottom bg-cover  bg-no-repeat">
         <div
-            class="ml-10 fadeIn md1:ml-12 bottom-12 lg1:bottom-52 mt-44 lg1:mt-[20%] lg1:text-5xl font-bold z-50 absolute  lg1:right-72 ">
+            class="ml-10 fadeIn  md1:ml-12 bottom-12 lg1:bottom-52 mt-44 lg1:mt-[20%] lg1:text-5xl font-bold z-50 absolute  lg1:left-3 ">
             <div class="wrapper">
                 SELAMAT DATANG DI
                 <br>
-                <span class="text-4xl lg1:text-7xl lg1:font-extrabold ">
-                    KANTIN ONLINE
-                </span> <br>
+                KANTIN ONLINE
+                <br>
                 <!-- stuck - desktop -->
                 <span class="text-4xl lg1:text-7xl lg1:font-extrabold  text-[#FC3535]">
                     SMECONE
@@ -76,7 +90,7 @@
             </div>
             <a href="kantin.html">
                 <button
-                    class="border-2 border-[#FC3535] rounded-xl px-7 py-1 lg1:px-20 lg1:py-3 balsamiq lg1:text-3xl mt-5 hover:border-transparent hover:bg-[#FC3535] duration-300">
+                    class="border-2 border-[#FC3535] bg-[#fc3535ba] rounded-xl px-7 py-1 lg1:px-20 lg1:py-3 balsamiq lg1:text-3xl mt-5 hover:border-transparent hover:bg-[#FC3535] duration-300">
                     Jajanan >
                 </button>
             </a>
@@ -84,8 +98,8 @@
         <!-- panah atas -->
         <a href="#back">
             <div
-                class="hover:bg-[#a5a5a5] bg-[#dbdbdb] shadow-lg w-[32px] h-[40px] hover:scale-110 duration-200  rounded-full  right-5 bottom-3 fixed z-50">
-                <img class="p-2 " src="asset/arround.png" alt="">
+                class="hover:bg-[#a5a5a5] bg-[#efefef] shadow-lg w-[50px] h-[50px] hover:scale-110 duration-200  rounded-full  right-5 bottom-3 fixed z-50">
+                <img class="p-4 " src="asset/arround.png" alt="">
             </div>
         </a>
         <div class="absolute hidden lg1:block -left-[90px] lg1:-left-[75px] lef bottom-32 rotate-90 ">Smecone / smkn 1
@@ -122,7 +136,7 @@
         </div>
         <!--  -->
 
-        <div class="  mt-36 mb-16 lg1:text-5xl  pl-11 pt-10 text-4xl font-bold name">
+        <div class="mt-16 mb-5 lg1:text-5xl  pl-11 pt-10 text-4xl font-bold name">
             TOP PRODUK
         </div>
         <!--  -->
@@ -134,63 +148,43 @@
         <!-- --------------------------------------------------- -->
         <!-- --------------------------------------------------- -->
         <!-- card 1 gabung card 2 untuk web laptop -->
-        <div class="flex overflow-x-auto min-w-full mb-10 pb-10 ">
+        <!-- scroll kanan kiri -->
+        <div class="flex overflow-x-auto min-w-full mb-10  ">
 
-            <!-- card1 -->
-            <div
-                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
-                <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Cireng 7 Rasa</div>
-                    <div class="mt-1 text-zinc-600">Dadang - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
-                        <button
-                            class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 hover:font-medium    py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
-                    </a>
-                    <a href="KOSmecone-detail/cireng.html">
-                        <button
-                            class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
-                            Produk</button>
-                    </a>
-                </div>
-                <div>
-                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] cireng bg-cover bg-center  bg-no-repeat rounded-md">
-                    </div>
-                </div>
-            </div>
 
             <!-- card2 -->
             <div
-                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
-                <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.5000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Salad Buah</div>
-                    <div class="mt-1 text-zinc-600">Dede Saputra - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mx-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mx-2">
+                    <div id="harga2" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk2" class="mt-1 text-2xl font-bold "> </div>
+                    <div id="pemilik2" class="mt-1 text-zinc-600"> </div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
                     <br>
-                    <a href="KOSmecone-detail/salad-buah.html">
+                    <a href="KOSmecone-detail/makaroni.html">
                         <button
                             class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
                             Produk</button>
                     </a>
                 </div>
                 <div>
-                    <div
-                        class="bg-[#BFBFBF] w-[100%] h-[200px] salad-buah  bg-cover bg-center  bg-no-repeat rounded-md">
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] makaroni  bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
             </div>
-            <!-- card1 -->
+            <!-- card3 -->
             <div
-                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
-                <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Cireng 7 Rasa</div>
-                    <div class="mt-1 text-zinc-600">Dadang - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mx-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mx-2">
+                    <div id="harga6" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk6" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik6" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 hover:font-medium    py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -206,26 +200,28 @@
                     </div>
                 </div>
             </div>
-            <!-- card1 -->
+            <!-- card4 -->
             <div
-                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
-                <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Cireng 7 Rasa</div>
-                    <div class="mt-1 text-zinc-600">Dadang - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mx-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mx-2">
+                    <div id="harga1" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk1" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik1" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 hover:font-medium    py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
 
-                    <a href="KOSmecone-detail/cireng.html">
+                    <a href="KOSmecone-detail/risol.html">
                         <button
                             class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
                             Produk</button>
                     </a>
                 </div>
+
                 <div>
-                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] cireng bg-cover bg-center  bg-no-repeat rounded-md">
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] risol bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
             </div>
@@ -236,16 +232,18 @@
         <!-- --------------------------------------------------- -->
         <!-- --------------------------------------------------- -->
         <!-- card 1 gabung card 2 untuk web laptop -->
-        <div class="flex overflow-x-auto min-w-full mb-10 pb-10 ">
+        <!-- scroll kanan kiri -->
+        <div class="flex overflow-x-auto min-w-full mb-10  ">
 
-            <!-- card1 -->
+            <!-- card5 -->
             <div
-                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
-                <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Cireng 7 Rasa</div>
-                    <div class="mt-1 text-zinc-600">Dadang - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mx-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mx-2">
+                    <div id="harga8" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk8" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik8" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 hover:font-medium    py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -256,19 +254,20 @@
                     </a>
                 </div>
                 <div>
-                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] cireng bg-cover bg-center  bg-no-repeat rounded-md">
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] dinsum bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
             </div>
 
-            <!-- card2 -->
+            <!-- card6 -->
             <div
-                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
-                <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.5000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Salad Buah</div>
-                    <div class="mt-1 text-zinc-600">Dede Saputra - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mx-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                <div class="mx-2">
+                    <div id="harga7" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk7" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik7" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -285,14 +284,15 @@
                     </div>
                 </div>
             </div>
-            <!-- card1 -->
+            <!-- card7 -->
             <div
-                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mx-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Cireng 7 Rasa</div>
-                    <div class="mt-1 text-zinc-600">Dadang - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <div id="harga6" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk6" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik6" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 hover:font-medium    py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -308,14 +308,15 @@
                     </div>
                 </div>
             </div>
-            <!-- card1 -->
+            <!-- card8 -->
             <div
-                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                class="grid grid-cols-2 min-w-[700px] px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mx-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Cireng 7 Rasa</div>
-                    <div class="mt-1 text-zinc-600">Dadang - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <div id="harga6" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk6" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik6" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 hover:font-medium    py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -344,7 +345,7 @@
 
 
         <!-- konten2 -->
-        <div class="mt-52 mb-20 text-4xl lg1:text-5xl  pl-11 font-bold name ">
+        <div class="mt-36 mb-5 text-4xl lg1:text-5xl  pl-11 font-bold name ">
             SPESIAL PROMO
         </div>
         <!--  -->
@@ -355,14 +356,15 @@
         <!-- card 1 gabung card 2 untuk web laptop -->
         <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 ">
 
-            <!-- card1 -->
+            <!-- card9 -->
             <div
                 class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.3500,-</div>
-                    <div class="mt-1 text-2xl font-bold ">kebab</div>
-                    <div class="mt-1 text-zinc-600">Rahmawati - XII PPLG 2</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <div id="harga12" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk12" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik12" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -381,14 +383,15 @@
 
 
 
-            <!-- card2 -->
+            <!-- card10 -->
             <div
                 class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Papeda Telur Ayam</div>
-                    <div class="mt-1 text-zinc-600">Siti Saputri - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <div id="harga11" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk11" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik11" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -413,14 +416,15 @@
         <!-- card 1 gabung card 2 untuk web laptop -->
         <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 ">
 
-            <!-- card1 -->
+            <!-- card11 -->
             <div
                 class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.2000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Basreng 2 Rasa</div>
-                    <div class="mt-1 text-zinc-600">Dadang - XII PPLG 2</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <div id="harga10" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk10" class="mt-1 text-2xl font-bold "> </div>
+                    <div id="pemilik10" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -439,14 +443,15 @@
 
 
 
-            <!-- card2 -->
+            <!-- card12 -->
             <div
                 class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Sosis Goreng</div>
-                    <div class="mt-1 text-zinc-600">Dede Saputra - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <div id="harga5" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk5" class="mt-1 text-2xl font-bold "> </div>
+                    <div id="pemilik5" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -471,52 +476,52 @@
         <!-- card 1 gabung card 2 untuk web laptop -->
         <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 ">
 
-            <!-- card1 -->
+            <!-- card13 -->
             <div
-                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.3500,-</div>
-                    <div class="mt-1 text-2xl font-bold ">kebab</div>
-                    <div class="mt-1 text-zinc-600">Rahmawati - XII PPLG 2</div>
+                    <div id="harga4" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk4" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik4" class="mt-1 text-zinc-600"></div>
                     <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
                     <br>
-                    <a href="KOSmecone-detail/kebab.html">
+                    <a href="KOSmecone-detail/lapis.html">
                         <button
                             class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
                             Produk</button>
                     </a>
                 </div>
                 <div>
-                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] kebab  bg-cover bg-center  bg-no-repeat rounded-md">
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] lapis  bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
             </div>
 
 
 
-            <!-- card2 -->
+            <!-- card14 -->
             <div
-                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
+                class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200 lg1:ml-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Papeda Telur Ayam</div>
-                    <div class="mt-1 text-zinc-600">Siti Saputri - XI PPLG 1</div>
+                    <div id="harga3" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk3" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik3" class="mt-1 text-zinc-600"></div>
                     <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
                     <br>
-                    <a href="KOSmecone-detail/papeda.html">
+                    <a href="KOSmecone-detail/keripik.html">
                         <button
                             class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
                             Produk</button>
                     </a>
                 </div>
                 <div>
-                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] papeda  bg-cover bg-center  bg-no-repeat rounded-md">
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] keripikS  bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
             </div>
@@ -527,84 +532,64 @@
         <!-- --------------------------------------------------- -->
         <!-- --------------------------------------------------- -->
         <!-- card 1 gabung card 2 untuk web laptop -->
-        <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 overflow-x-auto ">
+        <div class="lg1:grid lg1:grid-cols-2 lg1:mx-14 ">
 
-            <!-- card1 -->
+            <!-- card15 -->
             <div
                 class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.2000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Basreng 2 Rasa</div>
-                    <div class="mt-1 text-zinc-600">Dadang - XII PPLG 2</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <div id="harga9" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk9" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik9" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
                     <br>
-                    <a href="KOSmecone-detail/basreng.html">
+                    <a href="KOSmecone-detail/burger.html">
                         <button
                             class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
                             Produk</button>
                     </a>
                 </div>
                 <div>
-                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] basreng bg-cover bg-center  bg-no-repeat rounded-md">
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] burger  bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
             </div>
 
 
 
-            <!-- card2 -->
+            <!-- card16 -->
             <div
                 class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2  lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
                 <div class="mr-2">
-                    <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.1000,-</div>
-                    <div class="mt-1 text-2xl font-bold ">Sosis Goreng</div>
-                    <div class="mt-1 text-zinc-600">Dede Saputra - XI PPLG 1</div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <div id="harga14" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
+                    <div id="produk14" class="mt-1 text-2xl font-bold "></div>
+                    <div id="pemilik14" class="mt-1 text-zinc-600"></div>
+                    <a target="_blank"
+                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
                     <br>
-                    <a href="KOSmecone-detail/sosis.html">
+                    <a href="KOSmecone-detail/mochi.html">
                         <button
                             class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
                             Produk</button>
                     </a>
                 </div>
                 <div>
-                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] sosis  bg-cover bg-center  bg-no-repeat rounded-md">
+                    <div class="bg-[#BFBFBF] w-[100%] h-[200px] mochi  bg-cover bg-center  bg-no-repeat rounded-md">
                     </div>
                 </div>
             </div>
         </div>
-        <!--  -->
 
 
-        <!-- card1 -->
-        <div
-            class="grid grid-cols-2 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 bg-white shadow-xl border border-black my-3 name">
-            <div class="mr-2">
-                <div class="mt-3 font-semibold text-2xl text-[#ffa600]">Rp.2000,-</div>
-                <div class="mt-1 text-2xl font-bold ">Basreng 2 Rasa</div>
-                <div class="mt-1 text-zinc-600">Dadang - XII PPLG 2</div>
-                <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
-                    <button
-                        class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300   py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
-                </a>
-                <br>
-                <a href="KOSmecone-detail/basreng.html">
-                    <button
-                        class="bg-[#FC3535] hover:bg-[#791919] duration-300 hover:border py-1 rounded-md w-[100%] mt-2 text-white ">Detail
-                        Produk</button>
-                </a>
-            </div>
-            <div>
-                <div class="bg-[#BFBFBF] w-[100%] h-[200px] basreng bg-cover bg-center  bg-no-repeat rounded-md">
-                </div>
-            </div>
-        </div>
+
+
 
 
         <a class="mt-10 right-10 lg1:text-2xl absolute font-semibold name " href="kantin.html">
@@ -620,7 +605,7 @@
 
         <div class="lg1:grid lg1:grid-cols-2  items-center mt-10">
             <!-- <div class="w-[100%] h-[200px] lg1:h-[400px] bg-[#BFBFBF]  lg1:mr-4 mr-0 "></div> -->
-            <div class="text-white my-6 lg1:my-5 lg1:ml-4 ml-0">
+            <div data-aos-duration="1200" data-aos="fade-right" class="text-white my-6 lg1:my-5 lg1:ml-4 ml-0">
                 <div class="text-white font-bold text-3xl lg1:text-6xl ">Berita Penting!!</div>
                 <div class="  font-light text-2xl md1:text-3xl lg1:text-4xl mt-4">
                     <span class="text-[#FC3535]">
@@ -641,21 +626,23 @@
                 <div class="text-2xl md1:text-3xl lg1:text-4xl">dengan membeli produk yang kami sediakan
                 </div>
             </div>
-            <img class="px-5 lg1:w-[500px] lg1:ml-32" src="./asset/mockup2.png" alt="">
+            <img data-aos-duration="1200" data-aos="fade-left" class="px-5 lg1:w-[500px] lg1:ml-32"
+                src="./asset/mockup2.png" alt="">
         </div>
     </div>
 
     <!-- konten4 -->
     <div class="lg1:grid lg1:grid-cols-2 px-10 my-10 items-center">
-        <div class="lg1:mr-4 mr-0 text-2xl md1:text-3xl lg1:text-4xl font-light ">Kami akan selalu mengupdate produk
+        <div data-aos-duration="1200" data-aos="fade-right"
+            class="lg1:mr-4 mr-0 text-2xl md1:text-3xl lg1:text-4xl font-light ">Kami akan selalu mengupdate produk
             setiap minggu nantikan produk produk yang menarik
             lainnya
             <br><br>
             Terimakasih telah berkunjung di website kami
         </div>
-        <div class="w-[100%] h-[200px] lg1:h-[400px] bg-[#BFBFBF] my-10 lg1:ml-4 ml-0"></div>
+        <div data-aos-duration="1200" data-aos="fade-left"
+            class="w-[100%] h-[200px] lg1:h-[400px] bg-[#BFBFBF] my-10 lg1:ml-4 ml-0"></div>
     </div>
-
 
 
 
@@ -663,9 +650,15 @@
     <footer class="mt-36  text-center py-5 text-xs bg-black text-white">
         Design by tim X | Copyright 2023-2024
     </footer>
+
 </body>
+
 <script src="src/script.js"></script>
 <script src="src/produk.js"></script>
-
+<!-- animation scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

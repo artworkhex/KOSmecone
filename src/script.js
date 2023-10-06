@@ -6,7 +6,9 @@ const namesFromDOM = document.getElementsByClassName("name");
 
 // let hapus = document.getElementById('hapus');
 
-
+// ================================
+// ================================
+// ================================
 // listen for user events
 searchInput.addEventListener("keyup", (event) => {
     const { value } = event.target;
@@ -22,17 +24,24 @@ searchInput.addEventListener("keyup", (event) => {
         if (name.includes(searchQuery)) {
             // found name matching search, display it
             nameElement.removeAttribute = "block";
+            // nameElement.style.display = "block";
 
         } else if (name.includes()) {
             nameElement.removeAttribute = "block";
-        } else {
-            // no match, don't display name
-            nameElement.style.display = "none";
+            // nameElement.style.display = "none";
         }
     }
 });
 
 
+// responsive navbar
+function Menu(e) {
+    let list = document.querySelector('ul');
+
+    e.name === 'menu' ? (e.name = "close", list.classList.
+        add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+
+}
 
 
 
