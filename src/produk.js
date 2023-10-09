@@ -1,10 +1,12 @@
 const hargaProduk1 = "Rp.2000,-";
 const judulProduk1 = 'Risol Mayo';
 const pemilikProduk1 = 'Dwi Farel - XI PPLG 2';
+// const desk1 = 'Risol adalah makanan camilan yang populer di Indonesia. Ini adalah sejenis gorengan yang terbuat dari kulit lumpia yang tipis dan renyah, diisi dengan campuran berbagai bahan seperti wortel, kentang, daging cincang, telur, jamur, dan bumbu-bumbu yang lezat. Risol memiliki rasa gurih, pedas, dan renyah yang membuatnya menjadi pilihan camilan yang sangat digemari. Makanan ini sering disajikan dengan saus sambal atau saus tomat sebagai pelengkap. Risol adalah pilihan yang lezat untuk camilan atau hidangan pembuka yang bisa dijual belikan di berbagai acara atau warung makan.';
 if (document.getElementById('harga1') != null) {
     document.getElementById('harga1').innerHTML = hargaProduk1;
     document.getElementById('produk1').innerHTML = judulProduk1;
     document.getElementById('pemilik1').innerHTML = pemilikProduk1;
+    // document.getElementById('desk1').innerHTML = desk1;
 }
 
 
@@ -69,7 +71,7 @@ if (document.getElementById('harga6') != null) {
 
 // produk7 | salad
 const hargaProduk7 = 'Rp.5000,-';
-const judulProduk7 = 'Salad Budah';
+const judulProduk7 = 'Salad Buah';
 const pemilikProduk7 = 'Dede Saputra - XI AKL 1';
 if (document.getElementById('harga7') != null) {
     document.getElementById('harga7').innerHTML = hargaProduk7;
