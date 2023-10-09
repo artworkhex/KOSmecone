@@ -2,18 +2,17 @@
 module.exports = {
   content: [
     '*.html',
+    './*.html',
     './**/*.html',
     './index.html',
     './kantin.html',
     './about.html',
     './KOSmecone-detail/*.html',
     './KOSmecone-detail/*.html',
-    './KOSmecone-user/user.html',
-    // 'KOSmecone-user/masuk.html',
-    // 'KOSmecone-user/daftar.html',
-    './KOSmecone-user/*.html',
-
+    'signIn.html',
+    'Login.html',
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       xs1: "270px",
@@ -22,7 +21,11 @@ module.exports = {
       lg1: "776px",
       xl1: "1240px",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'bg-smecone1': "url('asset/smecone1.png')",
+      },
+    },
   },
   plugins: [],
 }

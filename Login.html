@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/style.css">
+
+    <link rel="icon" href="../asset/logo/logo1.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../asset/logo/logo1.png" media="(prefers-color-scheme: dark)">
+    <title>Kantin Online</title>
+</head>
+
+<body class="bg-zinc-50 dark:bg-zinc-900 dark:text-zinc-50">
+    <!-- navbar -->
+    <nav id='menu' class="flex justify-between px-7 md1:px-10 items-center  lg1:mt-3 w-[100%] ">
+        <div>
+            <a href="javascript:history.back()">
+                <img class="h-[30px] hidden dark:block" src="asset/backW.svg" alt="">
+            </a>
+            <a href="javascript:history.back()">
+                <img class="h-[30px] block dark:hidden" src="asset/backB.svg" alt="">
+            </a>
+        </div>
+        <!-- logo -->
+        <a href="index.html">
+            <div class=" duration-300 text-xl  text-gradasi1"><span class="font-bold">
+                    KOS</span>MECONE
+            </div>
+        </a>
+    </nav>
+    <!--  -->
+    <header class="grid grid-cols-1 text-center px-5 md1:px-16 py-7 md1:py-20 ">
+        <a href="index.html">
+            <img src="asset/back.png" alt="">
+        </a>
+        <div
+            class="md1:grid md1:h-[680px] md1:grid-cols-2 items-center bg-[#eeeeee] dark:bg-zinc-800  dark:border-zinc-700 border-[0.5px] rounded-xl border-zinc-300 shadow-2xl   ">
+            <div
+                class="bg-slate-800 w-[100%] h-[100%] pr-5  md1:rounded-l-xl bg-[url(../../asset/img2.jpg)] bg-no-repeat bg-cover bg-center ">
+            </div>
+            <div class="md1:p-5 md1:py-5 ">
+
+                <div class="text-3xl font-bold mt-2 md1:mt-9 md1:text-5xl ">Login</div>
+                <div class="text-[#9f9f9f] md1:text-xl md1:mt-3 ">
+                    hanya tersedia untuk seorang penjual yang ingin mendaftarkan produknya ke dalam website
+                </div>
+                <form class="text-left mt-10 md1:mt-" action="">
+                    <label class="mt-3 md1:text-xl " for="mail">Email :</label>
+                    <br>
+                    <input
+                        class="w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
+                        type="email" name="mail" id="mail">
+                    <br>
+                    <br>
+                    <label class="mt-3 md1:text-xl " for="pw">Password :</label>
+                    <br>
+                    <input
+                        class="w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
+                        type="text" name="pw" id="pw">
+
+                    <input
+                        class="w-[100%] rounded-lg mt-10 md1:mt-20 py-3 text-xl font-bold  text-white duration-300  hover:border-[#888888] hover:text-black hover:bg-white border-[0.5px] bg-gradasi1"
+                        type="button" value="Login">
+                </form>
+                <div class="mt-6 text-[#9f9f9f] md1:mt-4 pb-24 md1:pb-0">Belum memiliki akun? daftar sekarang <a
+                        class="font-bold text-zinc-800 dark:text-zinc-100 " href="signIn.html">
+                        disini! </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <script src="src/darkmode.js"></script>
+</body>
+
+</html>

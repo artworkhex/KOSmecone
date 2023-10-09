@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="../asset/logo/logo1.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../asset/logo/logo1.png" media="(prefers-color-scheme: dark)">
+    <title>Kantin Online</title>
+</head>
+
+<body class="bg-zinc-50 dark:bg-zinc-900 dark:text-zinc-50  ">
+    <!-- navbar -->
+    <nav id='menu' class="flex justify-between px-7 md1:px-10 items-center lg1:mt-3 w-[100%] ">
+        <div>
+            <a href="javascript:history.back()">
+                <img class="h-[30px] hidden dark:block" src="asset/backW.svg" alt="">
+            </a>
+            <a href="javascript:history.back()">
+                <img class="h-[30px] block dark:hidden" src="asset/backB.svg" alt="">
+            </a>
+        </div>
+        <!-- logo -->
+        <a href="index.html">
+            <div class=" duration-300 text-xl text-gradasi1"><span class="font-bold">
+                    KOS</span>MECONE
+            </div>
+        </a>
+    </nav>
+    <!--  -->
+    <header
+        class="grid grid-rows-1 md1:grid-cols-2 text-center mx-3 my-10 border-[0.5px] rounded-xl border-zinc-600 items-center shadow-2xl ">
+        <div
+            class="hidden md1:block bg-red-700 w-[100%] rounded-l-2xl h-[100%] bg-[url(../asset/regist.jpg)] bg-center bg-no-repeat">
+        </div>
+        <form class="text-left bg-zinc-50 dark:bg-zinc-800 rounded-lg px-5  mt-11 py-3" action="">
+            <div class="text-5xl font-bold ">Register</div>
+            <div class="text-[#9f9f9f] md1:text-xl mt-1">
+                isi data diri dengan jujur dan teliti dalam mengisinya
+            </div>
+
+            <div class="grid grid-cols-2">
+                <div class="pr-3">
+                    <!-- nama --> <br>
+                    <label for="mail">Nama Lengkap :</label>
+                    <br>
+                    <input placeholder="Riski Saputra Junior"
+                        class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 " type="email"
+                        name="nama" id="nama">
+                </div>
+
+                <div class="pl-3">
+                    <!-- nomor --> <br>
+                    <label class="" for="wa">nomor Wa :</label>
+                    <br>
+                    <input placeholder="088273477723"
+                        class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 " type="number"
+                        name="wa" id="wa">
+                </div>
+            </div>
+
+
+            <br>
+            <!-- kelas -->
+            <label for="kelas">Asal Kelas :</label>
+            <br>
+            <input placeholder="XI PPLG 2" class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 "
+                type="text" name="kelas" id="kelas">
+            <br><br>
+            <!-- alamat -->
+            <label for="alamat">Alamat Lengkap :</label>
+            <textarea placeholder="Desa, Kecamatan, Kabupaten/Kota"
+                class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 " type="text" name="alamat"
+                id="alamat"></textarea>
+            <br><br>
+            <!-- password -->
+            <label for="pw1">Password :</label>
+            <input placeholder="NDJWI02EJ02EKF9JS"
+                class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 " type="password" name="pw1"
+                id="pw1">
+            <br><br>
+            <!-- konfirmasi password -->
+            <label class="  " for="pw2">Konfirmasi Password :</label>
+            <input placeholder="NDJWI02EJ02EKF9JS"
+                class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 " type="password" name="pw2"
+                id="pw2">
+
+
+            <br>
+            <input
+                class="w-[100%] rounded-lg py-3 text-xl font-bold mt-5 text-zinbg-zinc-50 duration-300 hover:border-[#888888] hover:text-black hover:bg-zinc-50 border-[0.5px] bg-gradasi1"
+                type="button" value="Regist">
+            <div class="text-[#9f9f9f] mt-6 text-center">Belum memiliki akun? daftar sekarang <a
+                    class="font-bold text-zinc-900 dark:text-zinc-100 " href="Login.html">
+                    disini! </a>
+        </form>
+
+
+
+
+    </header>
+    <script src="src/script.js"></script>
+    <script src="src/darkmode.js"></script>
+
+</body>
+
+</html>
