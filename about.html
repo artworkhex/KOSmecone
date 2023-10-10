@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="src/animasi.css">
     <link rel="icon" href="asset/logo/logo1.png" media="(prefers-color-scheme: light)">
     <link rel="icon" href="asset/logo/logo1.png" media="(prefers-color-scheme: dark)">
-    <!-- icon items -->
-
     <!-- animasi Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!-- sweet alert -->
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <title>About</title>
 </head>
 
@@ -301,8 +301,62 @@
         </div>
     </div>
     <!--  -->
-    <footer class="mt-36  text-center py-5 text-xs bg-zinc-900 text-zinc-50 dark:bg-zinc-50 dark:text-zinc-900">
-        Design by tim X | Copyright 2023-2024
+    <footer class="mt-36 shadow-lg">
+        <div class="md1:flex px-7 md1:px-10 py-20 dark:bg-zinc-800 bg-zinc-100 ">
+            <div class="lg1:w-[800px] dark:text-zinc-50 text-zinc-900 ">
+                <img class="h-[40px]" src="/asset/logo/dark.png" alt="">
+                <div class=" lg1:text-2xl mt-5 ">Website ini di buat bertujuan untuk membantu para siswa berdagang di
+                    lingkungan
+                    smecone dan
+                    menumbuhkan jiwa kewirausahaan, kemandirian serta belajar tentang tanggung jawab
+                </div>
+                <div class="mt-5 md1:block hidden">
+                    <div class="font-bold text-2xl">Link</div>
+                    <a class="mt-3 text-[#FC3535]" href="index.html">
+                        <div>Home</div>
+                    </a>
+                    <a class="mt-3 text-[#FC3535]" href="kantin.html">
+                        <div>Kantin</div>
+                    </a>
+                    <a class="mt-3 text-[#FC3535]" href="about.html">
+                        <div>About</div>
+                    </a>
+                </div>
+            </div>
+
+            <form method="POST"
+                action="https://script.google.com/macros/s/AKfycbzH4542slfGGnoMrwWHp2FnDyYW-DB0bn4wj6ybtp6jc9yRFqKl-N7TEyyoPbSqqgLlaQ/exec"
+                class="md1:px-10">
+                <div class="font-bold text-3xl mt-20 md1:mt-0">Komentar</div>
+                <!-- nama -->
+                <div class="relative pt-4 w-[100%] field mt-5">
+                    <input type="input" id="Nsiswa" name="Nama"
+                        class="form__field  bg-transparent w-[100%] pt-2 text-zinc-900 dark:text-zinc-50  "
+                        placeholder="Name" required="required">
+                    <label for="name" class="form__label">Nama</label>
+                </div>
+                <!-- email -->
+                <div class="relative pt-4 w-[100%] field mt-10">
+                    <input type="email" id="email" name="Email"
+                        class="form__field  bg-transparent w-[100%] pt-2 text-zinc-900 dark:text-zinc-50 "
+                        placeholder="Email" required="required">
+                    <label for="email" class="form__label">email</label>
+                </div>
+                <div class="relative pt-4 w-[100%] field mt-10">
+                    <input type="text" name="Pesan"
+                        class="form__field  bg-transparent w-[100%] pt-2 text-zinc-900 dark:text-zinc-50 "
+                        placeholder="pesan" required="required">
+                    <label for="pesan" class="form__label">Pesan/Saran/Kritik</label>
+                </div>
+                <!-- submit -->
+                <input id="kirim" class="bg-gradasi1 rounded-lg w-[100%] h-[40px] mt-10 text-zinc-50 "
+                    onclick="contoh()" type="submit">
+            </form>
+            <button onclick="contoh()" name="test">testing</button>
+        </div>
+        <div class="  text-center py-5 text-xs bg-zinc-900 text-zinc-50 dark:bg-zinc-50 dark:text-zinc-900">
+            Design by tim X | Copyright 2023-2024
+        </div>
     </footer>
 </body>
 <!-- file javascript -->
@@ -311,8 +365,28 @@
 <script src="src/produk.js"></script>
 <!-- animasi scroll -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- sweet allert | notifikasi style -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     AOS.init();
+    // notif
+    document.getElementById("kirim").addEventListener("click", function () {
+        Swal.fire({
+            title: 'Comentar telah ditambahkan ',
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Kode yang ingin Anda eksekusi setelah pengguna menekan tombol OK
+                // Misalnya, Anda dapat melakukan pengalihan ke halaman lain
+                // window.location.href = 'halaman-lain.html';
+            }
+        });
+    });
 </script>
 
 
