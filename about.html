@@ -12,9 +12,7 @@
     <link rel="icon" href="asset/logo/logo1.png" media="(prefers-color-scheme: dark)">
     <!-- animasi Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- sweet alert -->
-    <script src="sweetalert2.min.js"></script>
-    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <title>About</title>
 </head>
 
@@ -304,7 +302,8 @@
     <footer class="mt-36 shadow-lg">
         <div class="md1:flex px-7 md1:px-10 py-20 dark:bg-zinc-800 bg-zinc-100 ">
             <div class="lg1:w-[800px] dark:text-zinc-50 text-zinc-900 ">
-                <img class="h-[40px]" src="/asset/logo/dark.png" alt="">
+                <img class="h-[40px] dark:block hidden" src="/asset/logo/white.png" alt="">
+                <img class="h-[40px] block dark:hidden" src="/asset/logo/dark.png" alt="">
                 <div class=" lg1:text-2xl mt-5 ">Website ini di buat bertujuan untuk membantu para siswa berdagang di
                     lingkungan
                     smecone dan
@@ -324,10 +323,10 @@
                 </div>
             </div>
 
-            <form method="POST"
-                action="https://script.google.com/macros/s/AKfycbzH4542slfGGnoMrwWHp2FnDyYW-DB0bn4wj6ybtp6jc9yRFqKl-N7TEyyoPbSqqgLlaQ/exec"
+            <form name="kirim-komentar"
+                action="https://script.google.com/macros/s/AKfycbz5D0g8FfpKGAYDVQo3gJGUeDBBDKvLqncovBi2mWLPWwcZBuN7tNpHe7JZ1c3yrZUIvA/exec"
                 class="md1:px-10">
-                <div class="font-bold text-3xl mt-20 md1:mt-0">Komentar</div>
+                <div class="font-bold text-3xl mt-20 md1:mt-0 text-zinc-900 dark:text-zinc-50">Komentar</div>
                 <!-- nama -->
                 <div class="relative pt-4 w-[100%] field mt-5">
                     <input type="input" id="Nsiswa" name="Nama"
@@ -343,16 +342,15 @@
                     <label for="email" class="form__label">email</label>
                 </div>
                 <div class="relative pt-4 w-[100%] field mt-10">
-                    <input type="text" name="Pesan"
+                    <textarea type="text" name="Pesan"
                         class="form__field  bg-transparent w-[100%] pt-2 text-zinc-900 dark:text-zinc-50 "
-                        placeholder="pesan" required="required">
+                        placeholder="pesan" required="required"></textarea>
                     <label for="pesan" class="form__label">Pesan/Saran/Kritik</label>
                 </div>
                 <!-- submit -->
-                <input id="kirim" class="bg-gradasi1 rounded-lg w-[100%] h-[40px] mt-10 text-zinc-50 "
-                    onclick="contoh()" type="submit">
+                <button id="kirim" class="bg-gradasi1 rounded-lg w-[100%] h-[40px] mt-10 text-zinc-50 "
+                    type="submit" >Kirim</button>
             </form>
-            <button onclick="contoh()" name="test">testing</button>
         </div>
         <div class="  text-center py-5 text-xs bg-zinc-900 text-zinc-50 dark:bg-zinc-50 dark:text-zinc-900">
             Design by tim X | Copyright 2023-2024
@@ -368,7 +366,19 @@
 <!-- sweet allert | notifikasi style -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
+
     AOS.init();
+    // komentar
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby7djseY7dXmXLi6n2ZTUXuTs_nCIWfZ7S07tRm_yHBRvwC9vAznXlIXP-anDmQU9Jt/exec'
+    const form = document.forms['kirim-komentar']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+
     // notif
     document.getElementById("kirim").addEventListener("click", function () {
         Swal.fire({
@@ -387,6 +397,7 @@
             }
         });
     });
+
 </script>
 
 
