@@ -3,7 +3,7 @@
 }
 
 .lapis {
-    background-image: url(/asset/produk/lapis.webp);
+    background-image: url(../asset/produk/lapis.webp);
 }
 
 .keripikS {
@@ -14,9 +14,8 @@
     background-image: url(../asset/produk/makaroni.webp);
 }
 
-
 .mochi {
-    background-image: url(/asset/produk/mochi.jpg);
+    background-image: url(../asset/produk/mochi.jpg);
 }
 
 .milidi {
