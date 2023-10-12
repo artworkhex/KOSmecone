@@ -590,6 +590,14 @@ video {
   margin: 0px;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-12 {
+  margin: 3rem;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -608,6 +616,11 @@ video {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .my-3 {
@@ -656,6 +669,10 @@ video {
 
 .ml-10 {
   margin-left: 2.5rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
 }
 
 .ml-2 {
@@ -822,20 +839,8 @@ video {
   width: 45px;
 }
 
-.w-\[500px\] {
-  width: 500px;
-}
-
 .w-screen {
   width: 100vw;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[100\] {
-  width: 100;
 }
 
 .rotate-90 {
@@ -861,10 +866,6 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
@@ -875,6 +876,10 @@ video {
 
 .place-content-center {
   place-content: center;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -895,6 +900,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .overflow-x-hidden {
@@ -1083,6 +1092,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-10 {
@@ -1398,10 +1411,6 @@ video {
 
 .delay-500 {
   transition-delay: 500ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
 }
 
 .duration-200 {
@@ -1893,6 +1902,11 @@ body {
     margin-bottom: 1.25rem;
   }
 
+  .lg1\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .lg1\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -1919,6 +1933,10 @@ body {
 
   .lg1\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .lg1\:ml-36 {
+    margin-left: 9rem;
   }
 
   .lg1\:block {
@@ -1961,8 +1979,8 @@ body {
     width: 1000px;
   }
 
-  .lg1\:w-\[800px\] {
-    width: 800px;
+  .lg1\:w-\[1100px\] {
+    width: 1100px;
   }
 
   .lg1\:grid-cols-2 {
@@ -2030,6 +2048,11 @@ body {
     padding-bottom: 0.75rem;
   }
 
+  .lg1\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .lg1\:pl-10 {
     padding-left: 2.5rem;
   }
@@ -2095,11 +2118,28 @@ body {
 }
 
 @media (min-width: 1240px) {
+  .xl1\:block {
+    display: block;
+  }
+
   .xl1\:w-\[1650px\] {
     width: 1650px;
   }
 
   .xl1\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl1\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .xl1\:text-left {
+    text-align: left;
+  }
+
+  .xl1\:text-right {
+    text-align: right;
   }
 }
