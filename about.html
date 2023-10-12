@@ -67,15 +67,17 @@
 
 
     <!-- KOSmecone -->
-    <div
-        class="justify-center pt-24 h-[800px] bg-[#3A3A3A] text-zinc-50 md1:grid lg1:1:grid-cols-2 items-center bg-[url(../asset/smecone1.png)] bg-bottom bg-cover ">
-        <div data-aos-duration="1200" data-aos="fade-right">
-            <!-- <img class=" px-10 lg1:px-24" src="./../asset/img1.png" alt=""> -->
+    <div class="justify-center pt-24  text-zinc-50 items-center bg-bottom bg-cover ">
+        <div data-aos-duration="1000" data-aos="fade-up"
+            class="balo  mt-7 md1:mt-0 font-bold text-3xl md1:text-5xl lg1:text-6xl  text-center ">
+            SMK Negeri 1 Purwokerto
         </div>
-
-
-
-
+        <div data-aos-duration="1200" data-aos="fade-right">
+            <iframe class="w-[100%] h-[500px] lg1:h-[700px] mt-10"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3936252103554!2d109.25183477566804!3d-7.421615592588867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e96a7e3cc79%3A0x6d79bcd9709b4b6!2sSMK%20Negeri%201%20Purwokerto!5e0!3m2!1sid!2sid!4v1697133098494!5m2!1sid!2sid"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
     <!--  -->
 
@@ -241,26 +243,29 @@
             <form name="kirim-komentar"
                 action="https://script.google.com/macros/s/AKfycbz5D0g8FfpKGAYDVQo3gJGUeDBBDKvLqncovBi2mWLPWwcZBuN7tNpHe7JZ1c3yrZUIvA/exec"
                 class="md1:px-10 w-[100%] ">
-                <div class="font-bold text-3xl mt-20 md1:mt-0 text-zinc-900 dark:text-zinc-50">Komentar</div>
+                <div class="font-bold text-3xl mt-20 md1:mt-0 text-zinc-900 dark:text-zinc-50">Anonimouse Komentar</div>
+                <dir class="dark:text-zinc-50 text-zinc-900">Berikan kami kritik jika anda tidak suka, berikan kami
+                    saran untuk memperbaiki sistem yang kami buat untuk kedepannya. Kami selalu menerima saran
+                    kritikannya </dir>
                 <!-- nama -->
                 <div class="relative pt-4 w-[100%] field mt-5">
                     <input type="input" id="Nsiswa" name="Nama"
                         class="form__field  bg-transparent w-[100%] pt-2 text-zinc-900 dark:text-zinc-50  "
                         placeholder="Name" required="required">
-                    <label for="name" class="form__label">Nama</label>
+                    <label for="name" class="form__label">Nama / Samaran</label>
                 </div>
                 <!-- email -->
-                <div class="relative pt-4 w-[100%] field mt-10">
+                <!-- <div class="relative pt-4 w-[100%] field mt-10">
                     <input type="email" id="email" name="Email"
                         class="form__field  bg-transparent w-[100%] pt-2 text-zinc-900 dark:text-zinc-50 "
                         placeholder="Email" required="required">
                     <label for="email" class="form__label">email</label>
-                </div>
+                </div> -->
                 <div class="relative pt-4 w-[100%] field mt-10">
                     <textarea type="text" name="Pesan"
                         class="form__field   bg-transparent w-[100%] pt-2 text-zinc-900 dark:text-zinc-50 "
                         placeholder="pesan" required="required"></textarea>
-                    <label for="pesan" class="form__label">Pesan/Saran/Kritik</label>
+                    <label for="pesan" class="form__label">Pesan / Saran / Kritik</label>
                 </div>
                 <!-- submit -->
                 <button id="kirim" class="bg-gradasi1 rounded-lg w-[100%] h-[40px] mt-10 text-zinc-50 "

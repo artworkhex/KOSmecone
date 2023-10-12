@@ -49,6 +49,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.bg-apik {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 /* scroll bar style custom */
@@ -65,4 +71,30 @@ body {
 
 ::-webkit-scrollbar-track {
     background-color: rgb(249, 242, 241);
+}
+
+/* slider */
+/* CSS untuk slider */
+
+.slider-wrapper {
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-item {
+    flex: 0 0 100%;
+
+}
+
+/* CSS untuk tombol navigasi */
+.slider-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-nav button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }

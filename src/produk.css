@@ -1,59 +1,180 @@
-.produk1 {
-    background-image: url(../asset/produk/produk1.jpg);
-}
-
-.lapis {
-    background-image: url(../asset/produk/lapis.webp);
-}
-
-.keripikS {
-    background-image: url(../asset/produk/keripik.webp);
-}
-
-.makaroni {
-    background-image: url(../asset/produk/makaroni.webp);
-}
-
-.mochi {
-    background-image: url(../asset/produk/mochi.jpg);
-}
-
-.milidi {
-    background-image: url(../asset/produk/milidi.jpg);
-}
-
-.risol {
+.produk1-1 {
     background-image: url(../asset/produk/risol.jpg);
 }
 
-.kebab {
-    background-image: url(../asset/produk/kebab.jpg);
+.produk1-2 {
+    background-image: url(../asset/produk/risol2.jpg);
 }
 
-.papeda {
-    background-image: url(../asset/produk/papeda.webp);
+.produk1-3 {
+    background-image: url(../asset/produk/risol3.jpg);
 }
 
-.basreng {
-    background-image: url(../asset/produk/basreng.webp);
+/* produk 2 */
+.produk2-1 {
+    background-image: url(../asset/produk/makaroni.webp);
 }
 
-.sosis {
+.produk2-2 {
+    background-image: url(../asset/produk/makaroni2.jpg);
+}
+
+.produk2-3 {
+    background-image: url(../asset/produk/makaroni3.webp);
+}
+
+/* produk 3 */
+.produk3-1 {
+    background-image: url(../asset/produk/keripik.webp);
+}
+
+.produk3-2 {
+    background-image: url(../asset/produk/keripik2.webp);
+}
+
+.produk3-3 {
+    background-image: url(../asset/produk/keripik3.jpg);
+}
+
+/* produk 4 */
+.produk4-1 {
+    background-image: url(../asset/produk/lapis.jpg);
+}
+
+.produk4-2 {
+    background-image: url(../asset/produk/lapis2.webp);
+}
+
+.produk4-3 {
+    background-image: url(../asset/produk/lapis3.webp);
+}
+
+/* produk 5 */
+.produk5-1 {
     background-image: url(../asset/produk/sosis.webp);
 }
 
-.cireng {
+.produk5-2 {
+    background-image: url(../asset/produk/sosis2.jpg);
+}
+
+.produk5-3 {
+    background-image: url(../asset/produk/sosis3.jpg);
+}
+
+/* produk 6 */
+.produk6-1 {
     background-image: url(../asset/produk/cireng.jpg);
 }
 
-.salad-buah {
-    background-image: url(../asset/produk/salad-buah.webp);
+.produk6-2 {
+    background-image: url(../asset/produk/cireng2.jpeg);
 }
 
-.dinsum {
+.produk6-3 {
+    background-image: url(../asset/produk/cireng3.jpg);
+}
+
+/* produk7 */
+.produk7-1 {
+    background-image: url(../asset/produk/salad.jpg);
+}
+
+.produk7-2 {
+    background-image: url(../asset/produk/salad-buah2.jpg);
+}
+
+.produk7-3 {
+    background-image: url(../asset/produk/salad-buah3.webp);
+}
+
+/* produk 8 */
+.produk8-1 {
     background-image: url(../asset/produk/dinsum.jpg);
 }
 
-.burger {
+.produk8-2 {
+    background-image: url(../asset/produk/dinsum2.jpg);
+}
+
+.produk8-3 {
+    background-image: url(../asset/produk/dinsum3.webp);
+}
+
+/* produk 9 */
+.produk9-1 {
     background-image: url(../asset/produk/burger.jpg);
+}
+
+.produk9-2 {
+    background-image: url(../asset/produk/burger2.webp);
+}
+
+.produk9-3 {
+    background-image: url(../asset/produk/burger3.jpg);
+}
+
+/* produk 10 */
+.produk10-1 {
+    background-image: url(../asset/produk/basreng.webp);
+}
+
+.produk10-2 {
+    background-image: url(../asset/produk/basreng2.webp);
+}
+
+.produk10-3 {
+    background-image: url(../asset/produk/basreng3.webp);
+}
+
+/* produk 11 */
+.produk11-1 {
+    background-image: url(../asset/produk/papeda2.jpg);
+}
+
+.produk11-2 {
+    background-image: url(../asset/produk/papeda.webp);
+}
+
+.produk11-3 {
+    background-image: url(../asset/produk/papeda3.webp);
+}
+
+/* produk 12 */
+.produk12-1 {
+    background-image: url(../asset/produk/kebab.jpg);
+}
+
+.produk12-2 {
+    background-image: url(../asset/produk/kebab2.jpeg);
+}
+
+.produk12-3 {
+    background-image: url(../asset/produk/kebab3.jpeg);
+}
+
+/* produk 13 */
+.produk13-1 {
+    background-image: url(../asset/produk/milidi.jpg);
+}
+
+.produk13-2 {
+    background-image: url(../asset/produk/milidi2.webp);
+}
+
+.produk13-3 {
+    background-image: url(../asset/produk/milidi3.jpg);
+}
+
+/* produk 14 */
+.produk14-1 {
+    background-image: url(../asset/produk/mochi.jpg);
+}
+
+.produk14-2 {
+    background-image: url(../asset/produk/mochi2.jpg);
+}
+
+.produk14-3 {
+    background-image: url(../asset/produk/mochi3.png);
 }
