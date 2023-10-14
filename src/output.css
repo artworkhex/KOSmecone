@@ -786,12 +786,12 @@ video {
   height: 45px;
 }
 
-.h-\[55px\] {
-  height: 55px;
+.h-\[500px\] {
+  height: 500px;
 }
 
-.h-\[800px\] {
-  height: 800px;
+.h-\[55px\] {
+  height: 55px;
 }
 
 .h-\[90px\] {
@@ -800,14 +800,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[500px\] {
-  height: 500px;
 }
 
 .w-7 {
@@ -836,10 +828,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[\] {
-  width: ;
 }
 
 .min-w-full {
@@ -1077,10 +1065,6 @@ video {
 
 .bg-\[url\(\.\.\/asset\/regist\.jpg\)\] {
   background-image: url(../asset/regist.jpg);
-}
-
-.bg-\[url\(\.\.\/asset\/smecone1\.png\)\] {
-  background-image: url(../asset/smecone1.png);
 }
 
 .bg-cover {
@@ -2041,11 +2025,6 @@ body {
   .lg1\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .lg1\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 
   .lg1\:px-44 {
