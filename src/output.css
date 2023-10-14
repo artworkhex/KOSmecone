@@ -734,6 +734,10 @@ video {
   margin-top: 1.75rem;
 }
 
+.mt-48 {
+  margin-top: 12rem;
+}
+
 .block {
   display: block;
 }
@@ -1953,6 +1957,10 @@ body {
 
   .lg1\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .lg1\:mt-72 {
+    margin-top: 18rem;
   }
 
   .lg1\:block {
