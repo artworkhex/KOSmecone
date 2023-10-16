@@ -17,13 +17,13 @@
     input:invalid,
     input:required:invalid {
         border: none;
-        outline: 2px solid red;
+        outline: 1px solid red;
         border-radius: 0.3rem;
     }
 
     input:valid,
     input:required {
-        border: 2px solid gray;
+        border: 1px solid gray;
         outline: inherit;
     }
 </style>
@@ -52,7 +52,7 @@
         <div
             class="hidden md1:block bg-zinc-700 w-[100%] rounded-l-2xl h-[100%] bg-cover bg-[url(../asset/banner.png)] bg-center bg-no-repeat">
         </div>
-        <form class="text-left bg-zinc-50 dark:bg-zinc-800 rounded-lg px-5  mt-11 py-3" action="">
+        <form class="text-left bg-zinc-50 dark:bg-zinc-800 rounded-lg px-5  mt-11 py-3" action="" id="myForm">
             <div class="text-5xl font-bold ">Register</div>
             <div class="text-[#9f9f9f] md1:text-xl mt-1">
                 isi data diri dengan jujur dan teliti dalam mengisinya
@@ -64,7 +64,7 @@
                     <label for="mail">Nama Lengkap :</label>
                     <br>
                     <input placeholder="Riski Saputra Junior" required minlength="4"
-                        class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                        class="lg1:text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
                         type="text" name="nama" id="nama">
                 </div>
 
@@ -73,7 +73,7 @@
                     <label class="" for="wa">nomor Wa :</label>
                     <br>
                     <input placeholder="088273477723" required pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"
-                        class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                        class="lg1:text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
                         type="number" name="wa" id="wa">
                 </div>
             </div>
@@ -84,20 +84,20 @@
             <label for="kelas">Asal Kelas :</label>
             <br>
             <input placeholder="XI PPLG 2" required
-                class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                class="lg1:text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
                 type="text" name="kelas" id="kelas">
             <br><br>
             <!-- alamat -->
             <label for="alamat">Alamat Lengkap :</label>
             <textarea placeholder="Desa, Kecamatan, Kabupaten/Kota"
-                class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                class="lg1:text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
                 type="text" name="alamat" id="alamat" rows="4"></textarea>
             <br><br>
             <!-- password -->
             <label for="pw1">Password :</label>
             <div class="flex items-center">
                 <input placeholder="NDJWI02EJ02EKF9JS" required minlength="5"
-                    class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                    class="lg1:text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
                     type="password" name="pw1" id="password1">
                 <!-- hidden icon -->
                 <iconify-icon id="eye-icon-show1" icon="mdi:eye-off-outline"
@@ -113,7 +113,7 @@
             <label class="  " for="pw2">Konfirmasi Password :</label>
             <div class="flex items-center">
                 <input placeholder="NDJWI02EJ02EKF9JS" required minlength="5"
-                    class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                    class="lg1:text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
                     type="password" name="pw2" id="password2">
                 <!-- hidden icon -->
                 <iconify-icon id="eye-icon-show2" icon="mdi:eye-off-outline"
@@ -124,6 +124,9 @@
                     class="text-zinc-900  absolute  right-12 cursor-pointer lg1:right-14 scale-[150%] md1:scale-[150%]  "
                     onclick="hidePassword(2)"></iconify-icon>
             </div>
+
+            <p id="password-match-message" style="color: red; display: none;">Password tidak valid, mohon ulangi
+                kembali.</p>
 
             <button
                 class="w-[100%] rounded-lg py-3 text-xl font-bold mt-5 text-zinbg-zinc-50 duration-300 hover:border-[#888888] hover:text-black hover:bg-zinc-50 border-[0.5px] bg-gradasi1"
@@ -145,6 +148,35 @@
     <!-- dark mocde -->
     <script src="src/darkmode.js"></script>
     <script>
+
+        // memunculkan notif saat validasi benar dan saat semua sudah ter isi
+        document.getElementById("myForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var password1 = document.getElementById("password1").value;
+            var password2 = document.getElementById("password2").value;
+            var passwordMatchMessage = document.getElementById("password-match-message");
+
+            if (password1 === password2) {
+                // Passwords match, proceed with form submission and show success alert.
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Akun berhasil dibuat',
+                    showConfirmButton: false,
+                    timer: 3500
+                });
+            } else {
+                // Passwords do not match, display error message.
+                passwordMatchMessage.style.display = "block";
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Akun gagal dibuat, tolong ulangi kembali',
+                });
+            }
+        });
+
+
         // password
         var pwVisible1 = false;
         var passwordInput1 = document.getElementById('password1');
@@ -185,20 +217,7 @@
         }
 
 
-        // notif
-        document.getElementById("kirim").addEventListener("click", function () {
-            // Di sini Anda perlu menentukan kondisi jika akun berhasil atau gagal
-            if (akunBerhasilDibuat) { // Ganti akunBerhasilDibuat dengan variabel yang sesuai
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'Akun berhasil dibuat',
-                    showConfirmButton: false,
-                    timer: 2500
-                });
-            }
-            // Jika akun gagal, tidak ada notifikasi yang ditampilkan.
-        });
+
 
     </script>
 </body>

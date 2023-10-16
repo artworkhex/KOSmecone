@@ -16,13 +16,13 @@
     input:invalid,
     input:required:invalid {
         border: none;
-        outline: 2px solid red;
+        outline: 1px solid red;
         border-radius: 0.3rem;
     }
 
     input:valid,
     input:required {
-        border: 2px solid gray;
+        border: 1px solid gray;
         outline: inherit;
     }
 </style>
@@ -61,11 +61,11 @@
                 <div class="text-[#9f9f9f] md1:text-xl md1:mt-3 ">
                     hanya tersedia untuk seorang penjual yang ingin mendaftarkan produknya ke dalam website
                 </div>
-                <form class="text-left mt-10 md1:mt-" action="">
+                <form class="text-left mt-10 md1:mt-" action="" id="myForm">
                     <label class="mt-3 md1:text-xl " for="mail">Email :</label>
                     <br>
                     <input placeholder="Putra33@gmail.com" autofocus required
-                        class="text-xl w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
+                        class="lg1:text-xl w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
                         type="email" name="mail" id="mail">
                     <br>
                     <br>
@@ -73,16 +73,16 @@
                     <label class="mt-3 md1:text-xl " for="pw">Password :</label>
                     <br>
                     <div class="flex items-center">
-                        <input placeholder="djIdihwiwj882hiWIGEOJ" required
-                            class="text-xl w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
+                        <input placeholder="djIdihwiwj882hiWIGEOJ" required minlength="8"
+                            class="lg1:text-xl w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
                             type="password" name="pw" id="password">
                         <!-- hidden icon -->
                         <iconify-icon id="eye-icon-show1" icon="mdi:eye-off-outline"
-                            class="text-zinc-900  absolute  right-6 cursor-pointer lg1:right-28 scale-[150%]  "
+                            class="text-zinc-900  absolute  right-9 cursor-pointer  lg1:right-28 scale-[150%]  "
                             onclick="showPassword()"></iconify-icon>
                         <!-- show icon -->
                         <iconify-icon id="eye-icon-hide1" icon="mdi:eye-outline"
-                            class="text-zinc-900  absolute  right-6 cursor-pointer lg1:right-28 scale-[150%]  "
+                            class="text-zinc-900  absolute  right-9 cursor-pointer lg1:right-28 scale-[150%]  "
                             onclick="hidePassword()"></iconify-icon>
                     </div>
 
@@ -133,14 +133,24 @@
         }
 
         // notif
-        document.getElementById("kirim").addEventListener("click", function () {
-            Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: 'berhasil login',
-                showConfirmButton: false,
-                timer: 2500
-            })
+        document.getElementById("myForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const success = true;
+            if (success) {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Login berhasil ',
+                    showConfirmButton: false,
+                    timer: 3500
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Terjadi kesalahan saat mengirim data!',
+                });
+            }
         });
 
 
