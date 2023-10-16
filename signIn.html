@@ -13,6 +13,21 @@
     <title>Kantin Online</title>
 </head>
 
+<style>
+    input:invalid,
+    input:required:invalid {
+        border: none;
+        outline: 2px solid red;
+        border-radius: 0.3rem;
+    }
+
+    input:valid,
+    input:required {
+        border: 2px solid gray;
+        outline: inherit;
+    }
+</style>
+
 <body class="bg-zinc-50 dark:bg-zinc-900 dark:text-zinc-50  ">
     <!-- navbar -->
     <nav id='menu' class="flex justify-between px-7 md1:px-10 items-center lg1:mt-3 w-[100%] ">
@@ -35,7 +50,7 @@
     <header
         class="grid grid-rows-1 md1:grid-cols-2 text-center mx-3 my-10 border-[0.5px] rounded-xl border-zinc-600 items-center shadow-2xl ">
         <div
-            class="hidden md1:block bg-red-700 w-[100%] rounded-l-2xl h-[100%] bg-[url(../asset/regist.jpg)] bg-center bg-no-repeat">
+            class="hidden md1:block bg-zinc-700 w-[100%] rounded-l-2xl h-[100%] bg-cover bg-[url(../asset/banner.png)] bg-center bg-no-repeat">
         </div>
         <form class="text-left bg-zinc-50 dark:bg-zinc-800 rounded-lg px-5  mt-11 py-3" action="">
             <div class="text-5xl font-bold ">Register</div>
@@ -48,18 +63,18 @@
                     <!-- nama --> <br>
                     <label for="mail">Nama Lengkap :</label>
                     <br>
-                    <input placeholder="Riski Saputra Junior"
-                        class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 " type="email"
-                        name="nama" id="nama">
+                    <input placeholder="Riski Saputra Junior" required minlength="4"
+                        class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                        type="text" name="nama" id="nama">
                 </div>
 
                 <div class="pl-3">
                     <!-- nomor --> <br>
                     <label class="" for="wa">nomor Wa :</label>
                     <br>
-                    <input placeholder="088273477723"
-                        class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 " type="number"
-                        name="wa" id="wa">
+                    <input placeholder="088273477723" required pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"
+                        class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                        type="number" name="wa" id="wa">
                 </div>
             </div>
 
@@ -68,32 +83,51 @@
             <!-- kelas -->
             <label for="kelas">Asal Kelas :</label>
             <br>
-            <input placeholder="XI PPLG 2" class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+            <input placeholder="XI PPLG 2" required
+                class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
                 type="text" name="kelas" id="kelas">
             <br><br>
             <!-- alamat -->
             <label for="alamat">Alamat Lengkap :</label>
             <textarea placeholder="Desa, Kecamatan, Kabupaten/Kota"
-                class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 " type="text" name="alamat"
-                id="alamat" rows="4"></textarea>
+                class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                type="text" name="alamat" id="alamat" rows="4"></textarea>
             <br><br>
             <!-- password -->
             <label for="pw1">Password :</label>
-            <input placeholder="NDJWI02EJ02EKF9JS"
-                class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 " type="password" name="pw1"
-                id="pw1">
+            <div class="flex items-center">
+                <input placeholder="NDJWI02EJ02EKF9JS" required minlength="5"
+                    class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                    type="password" name="pw1" id="password1">
+                <!-- hidden icon -->
+                <iconify-icon id="eye-icon-show1" icon="mdi:eye-off-outline"
+                    class="text-zinc-900  absolute  right-12 cursor-pointer lg1:right-14 scale-[150%] md1:scale-[150%] "
+                    onclick="showPassword(1)"></iconify-icon>
+                <!-- show icon -->
+                <iconify-icon id="eye-icon-hide1" icon="mdi:eye-outline"
+                    class="text-zinc-900  absolute  right-12 cursor-pointer lg1:right-14 scale-[150%] md1:scale-[150%]  "
+                    onclick="hidePassword(1)"></iconify-icon>
+            </div>
             <br><br>
             <!-- konfirmasi password -->
             <label class="  " for="pw2">Konfirmasi Password :</label>
-            <input placeholder="NDJWI02EJ02EKF9JS"
-                class="w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 " type="password" name="pw2"
-                id="pw2">
+            <div class="flex items-center">
+                <input placeholder="NDJWI02EJ02EKF9JS" required minlength="5"
+                    class="text-xl w-[100%] md1:h-[45px] pb-1 bg-[#BFBFBF] mt-1 rounded-md text-zinc-900 px-2 py-1 "
+                    type="password" name="pw2" id="password2">
+                <!-- hidden icon -->
+                <iconify-icon id="eye-icon-show2" icon="mdi:eye-off-outline"
+                    class="text-zinc-900  absolute  right-12 cursor-pointer lg1:right-14 scale-[150%] md1:scale-[150%] "
+                    onclick="showPassword(2)"></iconify-icon>
+                <!-- show icon -->
+                <iconify-icon id="eye-icon-hide2" icon="mdi:eye-outline"
+                    class="text-zinc-900  absolute  right-12 cursor-pointer lg1:right-14 scale-[150%] md1:scale-[150%]  "
+                    onclick="hidePassword(2)"></iconify-icon>
+            </div>
 
-
-            <br>
-            <input
+            <button
                 class="w-[100%] rounded-lg py-3 text-xl font-bold mt-5 text-zinbg-zinc-50 duration-300 hover:border-[#888888] hover:text-black hover:bg-zinc-50 border-[0.5px] bg-gradasi1"
-                type="button" value="Regist">
+                id="kirim"> daftar</button>
             <div class="text-[#9f9f9f] mt-6 text-center">Belum memiliki akun? daftar sekarang <a
                     class="font-bold text-zinc-900 dark:text-zinc-100 " href="Login.html">
                     disini! </a>
@@ -104,8 +138,69 @@
 
     </header>
     <script src="src/script.js"></script>
+    <!-- icon -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- sweet allert | notifikasi style -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- dark mocde -->
     <script src="src/darkmode.js"></script>
+    <script>
+        // password
+        var pwVisible1 = false;
+        var passwordInput1 = document.getElementById('password1');
+        var showIcon1 = document.getElementById('eye-icon-show1');
+        var hideIcon1 = document.getElementById('eye-icon-hide1');
 
+        var pwVisible2 = false;
+        var passwordInput2 = document.getElementById('password2');
+        var showIcon2 = document.getElementById('eye-icon-show2');
+        var hideIcon2 = document.getElementById('eye-icon-hide2');
+
+        function showPassword(inputNumber) {
+            if (inputNumber === 1) {
+                passwordInput1.type = 'text';
+                showIcon1.style.display = 'none';
+                hideIcon1.style.display = 'block';
+                pwVisible1 = true;
+            } else if (inputNumber === 2) {
+                passwordInput2.type = 'text';
+                showIcon2.style.display = 'none';
+                hideIcon2.style.display = 'block';
+                pwVisible2 = true;
+            }
+        }
+
+        function hidePassword(inputNumber) {
+            if (inputNumber === 1) {
+                passwordInput1.type = 'password';
+                showIcon1.style.display = 'block';
+                hideIcon1.style.display = 'none';
+                pwVisible1 = false;
+            } else if (inputNumber === 2) {
+                passwordInput2.type = 'password';
+                showIcon2.style.display = 'block';
+                hideIcon2.style.display = 'none';
+                pwVisible2 = false;
+            }
+        }
+
+
+        // notif
+        document.getElementById("kirim").addEventListener("click", function () {
+            // Di sini Anda perlu menentukan kondisi jika akun berhasil atau gagal
+            if (akunBerhasilDibuat) { // Ganti akunBerhasilDibuat dengan variabel yang sesuai
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Akun berhasil dibuat',
+                    showConfirmButton: false,
+                    timer: 2500
+                });
+            }
+            // Jika akun gagal, tidak ada notifikasi yang ditampilkan.
+        });
+
+    </script>
 </body>
 
 </html>

@@ -12,6 +12,21 @@
     <title>Kantin Online</title>
 </head>
 
+<style>
+    input:invalid,
+    input:required:invalid {
+        border: none;
+        outline: 2px solid red;
+        border-radius: 0.3rem;
+    }
+
+    input:valid,
+    input:required {
+        border: 2px solid gray;
+        outline: inherit;
+    }
+</style>
+
 <body class="bg-zinc-50 dark:bg-zinc-900 dark:text-zinc-50">
     <!-- navbar -->
     <nav id='menu' class="flex justify-between px-7 md1:px-10 items-center  lg1:mt-3 w-[100%] ">
@@ -38,7 +53,7 @@
         <div
             class="md1:grid md1:h-[680px] md1:grid-cols-2 items-center bg-[#eeeeee] dark:bg-zinc-800  dark:border-zinc-700 border-[0.5px] rounded-xl border-zinc-300 shadow-2xl   ">
             <div
-                class="bg-slate-800 w-[100%] h-[100%] pr-5  md1:rounded-l-xl bg-[url(../../asset/img2.jpg)] bg-no-repeat bg-cover bg-center ">
+                class="bg-zinc-800 w-[100%] h-[100%] pr-5  md1:rounded-l-xl bg-[url(../../asset/banner.png)] bg-no-repeat bg-cover bg-center ">
             </div>
             <div class="md1:p-5 md1:py-5 ">
 
@@ -49,20 +64,34 @@
                 <form class="text-left mt-10 md1:mt-" action="">
                     <label class="mt-3 md1:text-xl " for="mail">Email :</label>
                     <br>
-                    <input
-                        class="w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
+                    <input placeholder="Putra33@gmail.com" autofocus required
+                        class="text-xl w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
                         type="email" name="mail" id="mail">
                     <br>
                     <br>
+                    <!-- input  password -->
                     <label class="mt-3 md1:text-xl " for="pw">Password :</label>
                     <br>
-                    <input
-                        class="w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
-                        type="text" name="pw" id="pw">
+                    <div class="flex items-center">
+                        <input placeholder="djIdihwiwj882hiWIGEOJ" required
+                            class="text-xl w-[100%] md1:h-[50px] bg-[#BFBFBF] mt-1 rounded-md px-2 py-1 md1:py-3 dark:text-zinc-900"
+                            type="password" name="pw" id="password">
+                        <!-- hidden icon -->
+                        <iconify-icon id="eye-icon-show1" icon="mdi:eye-off-outline"
+                            class="text-zinc-900  absolute  right-6 cursor-pointer lg1:right-28 scale-[150%]  "
+                            onclick="showPassword()"></iconify-icon>
+                        <!-- show icon -->
+                        <iconify-icon id="eye-icon-hide1" icon="mdi:eye-outline"
+                            class="text-zinc-900  absolute  right-6 cursor-pointer lg1:right-28 scale-[150%]  "
+                            onclick="hidePassword()"></iconify-icon>
+                    </div>
 
-                    <input
-                        class="w-[100%] rounded-lg mt-10 md1:mt-20 py-3 text-xl font-bold  text-white duration-300  hover:border-[#888888] hover:text-black hover:bg-white border-[0.5px] bg-gradasi1"
-                        type="button" value="Login">
+                    <!-- button login -->
+                    <button value="Login" id="kirim"
+                        class="w-[100%] rounded-lg mt-10 md1:mt-12 py-3 text-xl font-bold  text-white duration-300  hover:border-[#888888] hover:text-zinc-900 hover:bg-white border-[0.5px] bg-gradasi1">
+                        Login
+                    </button>
+
                 </form>
                 <div class="mt-6 text-[#9f9f9f] md1:mt-4 pb-24 md1:pb-0">Belum memiliki akun? daftar sekarang <a
                         class="font-bold text-zinc-800 dark:text-zinc-100 " href="signIn.html">
@@ -73,7 +102,49 @@
 
     </header>
 
+
+    <!-- icon -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- sweet allert | notifikasi style -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- dark mocde -->
     <script src="src/darkmode.js"></script>
+    <script>
+        // password
+        var pwVisible = false;
+        var passwordInput = document.getElementById('password');
+        var showIcon = document.getElementById('eye-icon-show1');
+        var hideIcon = document.getElementById('eye-icon-hide1');
+        // var showIcon = document.getElementById('eye-icon-show2');
+        // var hideIcon = document.getElementById('eye-icon-hide2');
+
+        function showPassword() {
+            passwordInput.type = 'text';
+            showIcon.style.display = 'none';
+            hideIcon.style.display = 'block';
+            pwVisible = true;
+        }
+
+        function hidePassword() {
+            passwordInput.type = 'password';
+            showIcon.style.display = 'block';
+            hideIcon.style.display = 'none';
+            pwVisible = false;
+        }
+
+        // notif
+        document.getElementById("kirim").addEventListener("click", function () {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'berhasil login',
+                showConfirmButton: false,
+                timer: 2500
+            })
+        });
+
+
+    </script>
 </body>
 
 </html>
