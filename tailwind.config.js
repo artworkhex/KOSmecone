@@ -5,12 +5,7 @@ module.exports = {
     './*.html',
     './**/*.html',
     './index.html',
-    './kantin.html',
-    './about.html',
-    './KOSmecone-detail/*.html',
-    './KOSmecone-detail/*.html',
-    'signIn.html',
-    'Login.html',
+    './produksi/*.html'
   ],
   darkMode: 'class',
   theme: {

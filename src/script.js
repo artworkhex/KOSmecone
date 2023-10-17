@@ -1,7 +1,3 @@
-
-
-
-
 // navbar new
 function updatemenu() {
     if (document.getElementById('responsive-menu').checked == true) {

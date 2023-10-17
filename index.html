@@ -15,7 +15,67 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Kosmecone</title>
     <style>
+        .box {
 
+
+            position: relative;
+            border: 1px solid #BBB;
+            background: #EEE;
+        }
+
+        .ribbon {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            z-index: 1;
+            overflow: hidden;
+            width: 75px;
+            height: 75px;
+            text-align: right;
+        }
+
+        .ribbon span {
+            font-size: 10px;
+            font-weight: bold;
+            color: #FFF;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 20px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            width: 100px;
+            display: block;
+            background: #79A70A;
+            background: linear-gradient(#F79E05 0%, #8F5408 100%);
+            box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+            position: absolute;
+            top: 19px;
+            right: -21px;
+        }
+
+        .ribbon span::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid #8F5408;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8F5408;
+        }
+
+        .ribbon span::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid #8F5408;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8F5408;
+        }
     </style>
 </head>
 <nav id='menu' class="flex justify-center items-center absolute lg1:mt-3  w-[100%] bg-zinc-50 ">
@@ -64,7 +124,7 @@
             </div>
             <a href="kantin.html">
                 <button
-                    class=" border-[0.5px] border-[#ffffff] bg-gradasi1  rounded-lg px-7 py-1 lg1:px-20 lg1:py-3 lg1:text-3xl mt-5 hover:border-transparent  duration-300">
+                    class="  bg-gradasi1  rounded-lg px-7 py-1 lg1:px-20 lg1:py-3 lg1:text-3xl mt-5 hover:border-transparent  duration-300">
                     JAJANAN >
                 </button>
             </a>
@@ -94,7 +154,8 @@
             <div class="relative mb-4 flex flex-wrap items-stretch shadow-xl">
                 <input id="searchInput" type="text"
                     class=" relative lg1:text-xl m-0 block w-[100%] h-[45px] lg1:h-[60px] rounded-lg px-3 py-2 lg1:px-6  bg-[#ffffff]  text-[#000000] outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-[#000] focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600  dark:placeholder:text-[#6c6c6c] dark:focus:border-primary"
-                    placeholder="Produk yang anda cari ...." aria-label="Search" aria-describedby="button-addon2" />
+                    placeholder="Produk/Harga yang anda cari ...." aria-label="Search"
+                    aria-describedby="button-addon2" />
 
                 <!--Search icon-->
                 <a href="#">
@@ -129,8 +190,9 @@
 
             <!-- card 1 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon"><span>Terlaris</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk1-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -138,8 +200,8 @@
                     <div id="harga1" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk1" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik1" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a target="_blank"
-                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a target="_blank" href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -154,8 +216,9 @@
 
             <!-- card 2 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mx-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mx-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon"><span>Terlaris</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk2-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -163,8 +226,8 @@
                     <div id="harga2" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk2" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik2" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a target="_blank"
-                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a target="_blank" href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -179,8 +242,9 @@
 
             <!-- card 3 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon"><span>Terlaris</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk3-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -188,8 +252,8 @@
                     <div id="harga3" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk3" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik3" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a target="_blank"
-                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a target="_blank" href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -212,8 +276,9 @@
 
             <!-- card 4 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon"><span>Terlaris</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk4-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -221,8 +286,8 @@
                     <div id="harga4" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk4" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik4" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a target="_blank"
-                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a target="_blank" href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -237,8 +302,9 @@
 
             <!-- card 5 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon"><span>Terlaris</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk5-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -246,8 +312,8 @@
                     <div id="harga5" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk5" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik5" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a target="_blank"
-                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a target="_blank" href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -289,8 +355,9 @@
 
             <!-- card 6 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon "><span>Spesial</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk6-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -298,8 +365,8 @@
                     <div id="harga6" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk6" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik6" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a target="_blank"
-                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a target="_blank" href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -313,8 +380,9 @@
             </div>
             <!-- card 7 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon "><span>Spesial</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk7-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -322,8 +390,8 @@
                     <div id="harga7" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk7" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik7" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a target="_blank"
-                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a target="_blank" href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -338,8 +406,9 @@
 
             <!-- card 8 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon "><span>Spesial</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk8-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -347,8 +416,8 @@
                     <div id="harga8" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk8" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik8" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a target="_blank"
-                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a target="_blank" href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -374,8 +443,9 @@
 
             <!-- card 9 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon "><span>Spesial</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk9-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -383,7 +453,8 @@
                     <div id="harga9" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk9" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik9" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -398,8 +469,9 @@
 
             <!-- card 10 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200 lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200 lg1:ml-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon "><span>Spesial</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk10-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -407,7 +479,8 @@
                     <div id="harga10" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk10" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik10" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -422,8 +495,9 @@
 
             <!-- card 11 -->
             <div
-                class="grid grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
+                class="grid w-[99%]  box grid-cols-2 dark:bg-zinc-700 dark:border-zinc-400 px-6 hover:scale-105 hover:bg-[#e5e5e5] duration-200  lg1:mr-2 lg1:rounded-lg py-10 shadow-xl border border-zinc-300 my-3 name">
                 <div class="mr-1">
+                    <div class="ribbon "><span>Spesial</span></div>
                     <div class="bg-[#BFBFBF] w-[100%] h-[200px] produk11-1 bg-cover bg-center bg-no-repeat rounded-md">
                     </div>
                 </div>
@@ -431,8 +505,8 @@
                     <div id="harga11" class="mt-3 font-semibold text-2xl text-[#ffa600]"></div>
                     <div id="produk11" class="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50 "></div>
                     <div id="pemilik11" class="mt-1 text-zinc-60 text-zinc-600 dark:text-zinc-200 0"></div>
-                    <a target="_blank"
-                        href="http://wa.me/+6285607864511?text=permisi%20kak,%20aku%20mau%20nanya%20dong">
+                    <a target="_blank" href="http://wa.me/+6288216760774?text=permisi%20kak,%20aku%20mau%20nanya%20dong
+">
                         <button
                             class="bg-[#D9D9D9] hover:bg-[#a5a5a5] duration-300 py-1 rounded-md w-[100%] mt-4">Whatsapp</button>
                     </a>
@@ -444,7 +518,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
 
 
