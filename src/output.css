@@ -2227,6 +2227,14 @@ body {
   color: rgb(168 85 247 / var(--tw-text-opacity));
 }
 
+.hover\:z-\[999\]:hover {
+  z-index: 999;
+}
+
+.hover\:z-\[9999\]:hover {
+  z-index: 9999;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
