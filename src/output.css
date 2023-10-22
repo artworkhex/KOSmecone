@@ -827,6 +827,10 @@ video {
   margin-top: 2.75rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -1089,6 +1093,10 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-xl {
@@ -1882,6 +1890,11 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -2227,12 +2240,12 @@ body {
   color: rgb(168 85 247 / var(--tw-text-opacity));
 }
 
-.hover\:z-\[999\]:hover {
-  z-index: 999;
-}
-
 .hover\:z-\[9999\]:hover {
   z-index: 9999;
+}
+
+.hover\:z-\[999\]:hover {
+  z-index: 999;
 }
 
 .hover\:scale-105:hover {
@@ -2692,6 +2705,10 @@ body {
 }
 
 @media (min-width: 400px) {
+  .sm1\:hidden {
+    display: none;
+  }
+
   .sm1\:h-\[90px\] {
     height: 90px;
   }
@@ -2759,6 +2776,10 @@ body {
 
   .md1\:grid {
     display: grid;
+  }
+
+  .md1\:hidden {
+    display: none;
   }
 
   .md1\:h-\[120px\] {
@@ -2934,6 +2955,10 @@ body {
     margin-left: 0.5rem;
   }
 
+  .lg1\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .lg1\:ml-4 {
     margin-left: 1rem;
   }
@@ -3008,6 +3033,11 @@ body {
 
   .lg1\:bg-\[url\(\'\.\.\/asset\/header-desktop4\.png\'\)\] {
     background-image: url('../asset/header-desktop4.png');
+  }
+
+  .lg1\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg1\:px-12 {
