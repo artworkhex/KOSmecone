@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1095,10 +1095,6 @@ video {
   max-width: 100%;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
 .max-w-xl {
   max-width: 36rem;
 }
@@ -1552,10 +1548,6 @@ video {
   background-image: url('../asset/header-mobile1.png');
 }
 
-.bg-\[url\(\.\.\/\.\.\/asset\/banner\.png\)\] {
-  background-image: url(../../asset/banner.png);
-}
-
 .bg-\[url\(\.\.\/asset\/banner\.png\)\] {
   background-image: url(../asset/banner.png);
 }
@@ -1888,11 +1880,6 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -2282,6 +2269,11 @@ body {
 
 .hover\:border-transparent:hover {
   border-color: transparent;
+}
+
+.hover\:border-zinc-50:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 250 250 / var(--tw-border-opacity));
 }
 
 .hover\:bg-\[\#791919\]:hover {
@@ -2927,14 +2919,14 @@ body {
     right: 7rem;
   }
 
+  .lg1\:mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
   .lg1\:mx-14 {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
-  }
-
-  .lg1\:mx-2 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
   }
 
   .lg1\:my-0 {
@@ -2945,6 +2937,11 @@ body {
   .lg1\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+  }
+
+  .lg1\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .lg1\:mb-16 {
