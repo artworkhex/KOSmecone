@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1552,6 +1552,14 @@ video {
   background-image: url(../asset/banner.png);
 }
 
+.bg-\[url\(\'\.\.\/asset\/header-mobile2\.png\'\)\] {
+  background-image: url('../asset/header-mobile2.png');
+}
+
+.bg-\[url\(\'\.\.\/asset\/bg1\.png\'\)\] {
+  background-image: url('../asset/bg1.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -2899,10 +2907,6 @@ body {
 }
 
 @media (min-width: 776px) {
-  .lg1\:absolute {
-    position: absolute;
-  }
-
   .lg1\:-left-\[75px\] {
     left: -75px;
   }
@@ -2937,11 +2941,6 @@ body {
   .lg1\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-  }
-
-  .lg1\:mx-2 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
   }
 
   .lg1\:mb-16 {
@@ -3030,6 +3029,14 @@ body {
 
   .lg1\:bg-\[url\(\'\.\.\/asset\/header-desktop4\.png\'\)\] {
     background-image: url('../asset/header-desktop4.png');
+  }
+
+  .lg1\:bg-\[url\(\'\.\.\/asset\/header-desktop2\.png\'\)\] {
+    background-image: url('../asset/header-desktop2.png');
+  }
+
+  .lg1\:bg-\[url\(\'\.\.\/asset\/bg2\.png\'\)\] {
+    background-image: url('../asset/bg2.png');
   }
 
   .lg1\:px-10 {
